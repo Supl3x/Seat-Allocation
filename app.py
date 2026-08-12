@@ -338,9 +338,11 @@ with tab5:
         if not spec_df.empty:
             avg_cgpa = spec_df['cgpa'].mean()
             min_cgpa = spec_df['cgpa'].min()
+            max_cgpa = spec_df['cgpa'].max()
             
             stats.append({
                 "Specialisation": spec,
+                "Highest CGPA": max_cgpa,
                 "Average CGPA": avg_cgpa,
                 "Minimum CGPA (Closing Merit)": min_cgpa,
                 "Safe Target": avg_cgpa
@@ -352,6 +354,7 @@ with tab5:
         st.subheader("Historical Statistics")
         st.dataframe(
             stats_df.style.format({
+                "Highest CGPA": "{:.3f}",
                 "Average CGPA": "{:.3f}",
                 "Minimum CGPA (Closing Merit)": "{:.3f}",
                 "Safe Target": "{:.3f}"
@@ -367,6 +370,7 @@ with tab5:
         for i, row in stats_df.iterrows():
             with cols[i]:
                 spec = row["Specialisation"]
+                max_cgpa = row["Highest CGPA"]
                 avg_cgpa = row["Average CGPA"]
                 min_cgpa = row["Minimum CGPA (Closing Merit)"]
                 
@@ -380,6 +384,6 @@ with tab5:
                         st.warning("🟡 Possible")
                     else:
                         st.error("🔴 Unlikely")
-                    st.caption(f"Min: {min_cgpa:.3f}\n\nAvg: {avg_cgpa:.3f}")
+                    st.caption(f"Min: {min_cgpa:.3f}\n\nAvg: {avg_cgpa:.3f}\n\nMax: {max_cgpa:.3f}")
     else:
         st.write("No allocation data available for predictions.")
