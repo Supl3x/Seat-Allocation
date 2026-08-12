@@ -179,7 +179,7 @@ with tab2:
         'choice_1', 'choice_2', 'choice_3', 'choice_4', 'choice_5'
     ]
     
-    display_df = filtered_df[display_cols].copy()
+    display_df = filtered_df[display_cols].reset_index(drop=True)
     display_df.insert(0, 'S.No', range(1, len(display_df) + 1))
     
     # Streamlit dataframe natively supports sorting, filtering, and resizing
