@@ -134,7 +134,8 @@ with tab2:
         st.header("Filters")
         
         if st.button("Reset Filters"):
-            st.rerun() # Simple trick to reset state
+            st.session_state.clear()
+            st.rerun() 
             
         f_old_sec = st.multiselect("Old Section", sorted([s for s in df['old_section'].unique() if s]))
         f_new_sec = st.multiselect("New Section", sorted([s for s in df['new_section'].unique() if s]))
@@ -150,6 +151,9 @@ with tab2:
         st.markdown("---")
         st.subheader("Sorting")
         sort_options = ['merit_rank', 'roll', 'name', 'cgpa', 'old_section', 'new_section', 'allocated_specialisation']
+        if 'gender' in df.columns:
+            sort_options.insert(4, 'gender')
+            
         sort_col = st.selectbox("Sort Data By", sort_options, index=0)
         sort_asc = st.toggle("Sort Ascending", value=True)
 
