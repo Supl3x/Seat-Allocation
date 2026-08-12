@@ -123,7 +123,7 @@ CT-140,SYED YAHYAA BIN HASHIM,3.438,C,Artificial Intelligence,Data Science,Compu
 CT-158,IMAAN FARRUKH,3.434,D,Data Science,Artificial Intelligence,Cyber Security,Computer Science - (No Specialisation),Gaming & Animation,Data Science,D,allocated
 CT-235,MUHAMMAD SARIM UMER,3.423,E,Computer Science - (No Specialisation),Cyber Security,Artificial Intelligence,Data Science,Gaming & Animation,Computer Science,A,allocated
 CT-022,HAMMAD AHMED SIDDIQUI,3.42,A,Cyber Security,Computer Science - (No Specialisation),Artificial Intelligence,Data Science,Gaming & Animation,Cyber Security,E,allocated
-CT-141,MUHAMMAD RAFAY,3.416,C,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,,,MISSING_FROM_OFFICIAL_LISTS
+CT-141,MUHAMMAD RAFAY,3.416,C,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,B,allocated
 CT-109,MHERAH FATIMA,3.413,C,Data Science,Computer Science - (No Specialisation),Gaming & Animation,Artificial Intelligence,Cyber Security,Data Science,D,allocated
 CT-138,MUHAMMAD RAZA,3.4,C,Cyber Security,Computer Science - (No Specialisation),Data Science,Artificial Intelligence,Gaming & Animation,Cyber Security,E,allocated
 CT-268,MUHAMMAD DANISH MERAJ,3.4,F,Computer Science - (No Specialisation),Data Science,Artificial Intelligence,Cyber Security,Gaming & Animation,Computer Science,A,allocated
@@ -164,7 +164,7 @@ CT-097,HAMADULLAH,3.258,B,Artificial Intelligence,Data Science,Computer Science 
 CT-263,MUHAMMAD AFZAL,3.256,F,Computer Science - (No Specialisation),Data Science,Artificial Intelligence,Cyber Security,Gaming & Animation,Computer Science,A,allocated
 CT-206,ALIZA KANWAL,3.255,E,Data Science,Artificial Intelligence,Computer Science - (No Specialisation),Computer Science - (No Specialisation),Computer Science - (No Specialisation),Data Science,D,allocated
 CT-126,MUHAMMAD AMMAR AWAN,3.253,C,Data Science,Cyber Security,Artificial Intelligence,Computer Science - (No Specialisation),Computer Science - (No Specialisation),Data Science,D,allocated
-CT-239,MOHAMMAD USMAN MASOOD,3.252,E,Computer Science - (No Specialisation),Cyber Security,Data Science,Artificial Intelligence,Gaming & Animation,,,MISSING_FROM_OFFICIAL_LISTS
+CT-239,MOHAMMAD USMAN MASOOD,3.252,E,Computer Science - (No Specialisation),Cyber Security,Data Science,Artificial Intelligence,Gaming & Animation,Computer Science,A,allocated
 CT-274,HAFIZ HAMMAD SHAHID,3.25,F,Data Science,Cyber Security,Computer Science - (No Specialisation),Artificial Intelligence,Gaming & Animation,Data Science,D,allocated
 CT-209,EMAAN ARIF KHAN,3.248,E,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,C,allocated
 CT-044,SAIF UR REHMAN,3.247,A,Cyber Security,Data Science,Computer Science - (No Specialisation),Artificial Intelligence,Gaming & Animation,Cyber Security,E,allocated
@@ -238,7 +238,7 @@ CT-300,MUHAMMAD ZAID KHAN,2.814,F,Cyber Security,Data Science,Artificial Intelli
 CT-004,MARIUM NAZ,2.806,A,Gaming & Animation,Cyber Security,Data Science,Computer Science - (No Specialisation),Artificial Intelligence,Gaming & Animation,F,allocated
 CT-119,ROMAISA FATIMA,2.788,C,Data Science,Gaming & Animation,Artificial Intelligence,Cyber Security,Computer Science - (No Specialisation),Gaming & Animation,F,allocated
 CT-289,SYED IBRAHIM AZIZ,2.78,F,Cyber Security,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Gaming & Animation,Cyber Security,E,allocated
-CT-107,TEHZEEB GHAZI,2.769,C,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Data Science,Artificial Intelligence,,,MISSING_FROM_OFFICIAL_LISTS
+CT-107,TEHZEEB GHAZI,2.769,C,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Data Science,Artificial Intelligence,Cyber Security,E,allocated
 CT-217,SYEDA AMNA ZAHID,2.763,E,Cyber Security,Artificial Intelligence,Computer Science - (No Specialisation),Data Science,Gaming & Animation,Cyber Security,E,allocated
 CT-150,SYED MUHAMMAD AQIB,2.738,C,Computer Science - (No Specialisation),Data Science,Artificial Intelligence,Cyber Security,Gaming & Animation,Artificial Intelligence,C,allocated
 CT-101,MAHNOOR HAMID,2.722,C,Computer Science - (No Specialisation),Data Science,Cyber Security,Artificial Intelligence,Gaming & Animation,Cyber Security,E,allocated
@@ -301,6 +301,3 @@ CT-117,SYEDA WANIA AHSAN,0.0,C,,,,,,,,no_response_not_allocated
 CT-130,MOIZ ALI,0.0,C,,,,,,,,no_response_not_allocated
 CT-241,SHEERAZ MALLICK,0.0,E,,,,,,,,no_response_not_allocated
 CT-039,MUHAMMAD OMER BARI,0.0,,,,,,,,,no_response_not_allocated
-CT-107,TEHZEEB GHAZI,2.769,C,,,,,,Cyber Security,E,allocated
-CT-141,MUHAMMAD RAFAY,3.416,C,,,,,,Artificial Intelligence,B,allocated
-CT-239,MOHAMMAD USMAN MASOOD,3.252,E,,,,,,Computer Science,A,allocated
