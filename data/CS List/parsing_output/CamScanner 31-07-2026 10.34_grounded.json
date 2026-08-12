@@ -1,0 +1,418 @@
+[
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "trar\nRe",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 101.13645935058594,
+          "t": 821.2845821380615,
+          "r": 148.7152099609375,
+          "b": 757.7497787475586
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.34/images/CamScanner 31-07-2026 10.34_image_1_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "trar\nRe"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 1,
+    "text": "NED UNIVERSITY OF ENGINEERING & TECHNOLOGY E-Mail:dracad@neduet.edu.pk/Website: www.neduet.edu.pk Phone: (92-21) 99261261-8 Ext-2221/Fax: (92-21) 99261255",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 157.33333333333331,
+          "t": 808.0,
+          "r": 494.6666666666667,
+          "b": 771.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "No.Acad/9(H)/53078",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 371.3333333333333,
+          "t": 763.3333333333334,
+          "r": 472.3333333333333,
+          "b": 752.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Dated:14-07-2026",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 372.0,
+          "t": 751.6666666666666,
+          "r": 456.3333333333333,
+          "b": 742.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "OFFICE ORDER",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 251.66666666666666,
+          "t": 719.3333333333334,
+          "r": 344.3333333333333,
+          "b": 704.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "(Computer Science) to the following students of BS Computer Science Programme Bat Sss  S  o  Sss  o os D-6.",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 85.33333333333333,
+          "t": 658.0,
+          "r": 508.6666666666667,
+          "b": 623.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The list of Computer Science (General) one section is attached as Annex-A.",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 117.0,
+          "t": 611.6666666666667,
+          "r": 506.3333333333333,
+          "b": 596.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Whwssain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 394.0,
+          "t": 583.0,
+          "r": 494.0,
+          "b": 551.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "Yhussain\nREGISTRAR",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 397.14056396484375,
+          "t": 580.8578796386719,
+          "r": 489.19921875,
+          "b": 544.7923583984375
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.34/images/CamScanner 31-07-2026 10.34_image_3_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "Yhussain\nREGISTRAR"
+      }
+    }
+  },
+  {
+    "type": "caption",
+    "level": 2,
+    "text": "REGISTRAR",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 407.0,
+          "t": 554.6666666666666,
+          "r": 470.6666666666667,
+          "b": 543.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 85.66666666666667,
+          "t": 522.6666666666666,
+          "r": 128.33333333333334,
+          "b": 510.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 104.70497131347656,
+          "t": 505.21197509765625,
+          "r": 129.00033569335938,
+          "b": 485.8271789550781
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.34/images/CamScanner 31-07-2026 10.34_image_2_p1.png",
+        "type": "image",
+        "page": 1
+      }
+    }
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Chairperson, Department of Computer Science & IT",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 113.66666666666666,
+          "t": 497.66666666666663,
+          "r": 381.6666666666667,
+          "b": 484.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Controller of Examinations",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 117.33333333333334,
+          "t": 478.66666666666663,
+          "r": 265.66666666666663,
+          "b": 467.33333333333337
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Senior Manager (IS)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 117.33333333333334,
+          "t": 461.33333333333337,
+          "r": 230.66666666666666,
+          "b": 449.33333333333337
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy for information to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 85.33333333333333,
+          "t": 408.0,
+          "r": 202.0,
+          "b": 396.3333333333333
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Dean (ECE)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 180.0,
+          "t": 382.3333333333333,
+          "r": 255.0,
+          "b": 369.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "CAC",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 177.66666666666669,
+          "t": 355.0,
+          "r": 233.66666666666666,
+          "b": 339.6666666666667
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 484.522216796875,
+          "t": 32.530029296875,
+          "r": 578.2797241210938,
+          "b": 8.60906982421875
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.34/images/CamScanner 31-07-2026 10.34_image_4_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "List of Students Batch 2024 - BS Computer Science (General) Section A",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 140.68832397460938,
+          "t": 798.3175404866537,
+          "r": 479.3601888020833,
+          "b": 783.8931452433268
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "table",
+    "level": 1,
+    "text": "|   S. No. | Roll No           | Name                                        | Allocated Specialisation          |\n|----------|-------------------|---------------------------------------------|-----------------------------------|\n|        1 | CT-24219          | SYEDA ALIZA AYAZ                            | Computer Science                  |\n|        2 | CT-24218          | ARSALA KHAN                                 | Computer Science                  |\n|        3 | CT-24028          | MUHAMMAD UMAR                               | Computer Science                  |\n|        4 | CT-24053          | SYEDA AMNA JAFRI                            | Computer Science                  |\n|        5 | CT-24255          | MUHAMMAD SARAIB                             | Computer Science                  |\n|        6 | CT-24009          | TAYYABA                                     | Computer Science                  |\n|        7 | CT-24157          | HAMNA ALI KHAN                              | Computer Science                  |\n|        8 | CT-24248          | RIDA RAFIQUE                                | Computer Science                  |\n|        9 | CT-24185          | HASSAN SHAKIL                               | Computer Science                  |\n|       10 | CT-24047          | IZHAN KHAN                                  | Computer Science                  |\n|       11 | CT-24169          | AMNA MOHSIN                                 | Computer Science                  |\n|       12 | CT-24267          | SHAHZAIM                                    | Computer Science                  |\n|       13 | CT-24197          | AYAN MIRZA                                  | Computer Science                  |\n|       14 | CT-24309          | AYESHA                                      | Computer Science                  |\n|       15 | CT-24280          | MUHAMMAD HUZAIFA                            | Computer Science                  |\n|       16 | CT-24201          | FATIMA AZFAR                                | Computer Science                  |\n|       17 | CT-24029          | SYED HUZAIFA BUKHARI                        | Computer Science                  |\n|       18 | CT-24041          | MUHAMMAD AHMED BASIT KHAN                   | Computer Science                  |\n|       19 | CT-24266          | SARIM KHAN                                  | Computer Science                  |\n|       20 | CT-24001          | JAVERIA IRFAN ALI                           | Computer Science                  |\n|       21 | CT-24236          | MUHAMMAD WASAY RAFIQ                        | Computer Science                  |\n|       22 | CT-24204          | HIBA ABRAR                                  | Computer Science                  |\n|       23 | CT-24222          | MUHAMMAD BILAL RASHEED                      | Computer Science                  |\n|       24 | CT-24042          | ZORAIZ AFRIDI                               | Computer Science                  |\n|       25 | CT-24171          | AHMED RAZA                                  | Computer Science                  |\n|       26 | CT-24020          | M. IBTISSAM ASLAM                           | Computer Science                  |\n|       27 | CT-24048          | SYED AHMED AYAAN                            | Computer Science                  |\n|       28 | CT-24225          | NIZAM UDDIN AHMED                           | Computer Science                  |\n|       29 | CT-24265          | MUHAMMAD MAAZ ALI                           | Computer Science                  |\n|       30 | CT-24075          | MUHAMMAD SUBHAN KHAN                        | Computer Science                  |\n|       31 | CT-24308          | RAZA ALI                                    | Computer Science                  |\n|       32 | CT-24085          | MUHAMMAD OWAIS KAMRAN KHANIA                | Computer Science                  |\n|       33 | CT-24235          | MUHAMMAD SARIM UMER                         | Computer Science                  |\n|       34 | CT-24268          | MUHAMMAD DANISH MERAJ                       | Computer Science                  |\n|       35 | CT-24245          | MUHAMMAD AHMED KHAN                         | Computer Science                  |\n|       36 | CT-24154          | SAMIN                                       | Computer Science                  |\n|       37 | CT-24237          | MUHAMMAD HAMZA HAMID                        | Computer Science                  |\n|       38 | CT-24045          | AFLAH ARIF                                  | Computer Science                  |\n|       39 | CT-24070          | HUSN UR REHMAN KHAN                         | Computer Science                  |\n|       40 | CT-24056          | KINZA                                       | Computer Science                  |\n|       41 | CT-24238          | MUHAMMAD MESUM ABBAS                        | Computer Science                  |\n|       42 | CT-24137          | MUHAMMAD HARIS                              | Computer Science                  |\n|       43 | CT-24116          | AMNA SHAIKH                                 | Computer Science                  |\n|       44 | CT-24139          | MUHAMMAD ARSAL SAJID                        | Computer Science                  |\n|       45 | CT-24247          | MUHAMMAD FERAS MALIK                        | Computer Science                  |\n|       46 | CT-24208          | MISHAL KHAN                                 | Computer Science                  |\n|       47 | CT-24263          | MUHAMMAD AFZAL                              | Computer Science                  |\n|       48 | CT-24239 CT-24177 | MOHAMMAD USMAN MASOOD FUZAIL AHMED SIDDIQUI | Computer Science Computer Science |\n|       49 | CT-24281          |                                             |                                   |\n|       50 |                   | SYED MUHAMMAD HUNAIN                        | Computer Science                  |",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 105.90470123291016,
+          "t": 785.4829406738281,
+          "r": 512.3076171875,
+          "b": 135.90350341796875
+        }
+      }
+    ],
+    "media": {
+      "table": {
+        "csv": "/content/output/CamScanner 31-07-2026 10.34/tables/CamScanner 31-07-2026 10.34_table_1_p2.csv",
+        "html": "/content/output/CamScanner 31-07-2026 10.34/tables/CamScanner 31-07-2026 10.34_table_1_p2.html",
+        "rows": 50,
+        "cols": 4,
+        "page": 2
+      }
+    }
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 484.7281799316406,
+          "t": 32.188232421875,
+          "r": 578.2888793945312,
+          "b": 8.59130859375
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.34/images/CamScanner 31-07-2026 10.34_image_5_p2.png",
+        "type": "image",
+        "page": 2,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  }
+]

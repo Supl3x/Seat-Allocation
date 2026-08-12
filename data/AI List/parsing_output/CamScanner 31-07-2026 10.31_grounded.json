@@ -1,0 +1,446 @@
+[
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "trar\nRe",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 102.63101196289062,
+          "t": 818.7909641265869,
+          "r": 151.21763610839844,
+          "b": 755.8548126220703
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.31/images/CamScanner 31-07-2026 10.31_image_1_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "trar\nRe"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "NED UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 159.0,
+          "t": 805.0,
+          "r": 489.0,
+          "b": 794.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "E-Mail:dracad@neduet.edu.pk/Website: www.neduet.edu.pk Phone: (92-21) 99261261-8 Ext-2221/Fax: (92-21) 99261255",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 160.33333333333331,
+          "t": 793.3333333333334,
+          "r": 493.0,
+          "b": 769.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "No.Acad/9(H)/53083",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 370.6666666666667,
+          "t": 761.6666666666666,
+          "r": 470.6666666666667,
+          "b": 750.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Dated:14-07-2026",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 371.3333333333333,
+          "t": 750.3333333333334,
+          "r": 455.0,
+          "b": 741.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "OFFICE ORDER",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 251.66666666666666,
+          "t": 717.3333333333334,
+          "r": 344.0,
+          "b": 701.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "(Artificial Intelligence) to the following students of BS Computer Science Programme BAat    o o  Ssd s o o S-6..",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 88.66666666666667,
+          "t": 659.6666666666666,
+          "r": 506.6666666666667,
+          "b": 623.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The list of Computer Science (Artificial Intelligence) two section are attached as Annex-B and Annex-C.",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 89.0,
+          "t": 613.0,
+          "r": 506.6666666666667,
+          "b": 579.6666666666667
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Othussamn",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 389.3333333333333,
+          "t": 568.3333333333333,
+          "r": 494.6666666666667,
+          "b": 531.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "Offersain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 392.9279479980469,
+          "t": 565.0905456542969,
+          "r": 488.6681213378906,
+          "b": 534.1529541015625
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.31/images/CamScanner 31-07-2026 10.31_image_3_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "Offersain"
+      }
+    }
+  },
+  {
+    "type": "caption",
+    "level": 2,
+    "text": "REGISTRAR",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 406.0,
+          "t": 535.3333333333334,
+          "r": 469.0,
+          "b": 523.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 88.0,
+          "t": 506.0,
+          "r": 130.33333333333334,
+          "b": 492.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 107.86265563964844,
+          "t": 488.47833251953125,
+          "r": 129.21054077148438,
+          "b": 469.408935546875
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.31/images/CamScanner 31-07-2026 10.31_image_2_p1.png",
+        "type": "image",
+        "page": 1
+      }
+    }
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Controller of Examinations",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 121.0,
+          "t": 460.33333333333337,
+          "r": 266.0,
+          "b": 447.33333333333337
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Senior Manager (IS)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 120.66666666666666,
+          "t": 443.33333333333337,
+          "r": 232.0,
+          "b": 429.66666666666663
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy for information to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 88.66666666666667,
+          "t": 390.3333333333333,
+          "r": 204.66666666666669,
+          "b": 378.3333333333333
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Dean (ECE)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 183.66666666666669,
+          "t": 364.0,
+          "r": 256.0,
+          "b": 351.6666666666667
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "2. CAC",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 182.33333333333331,
+          "t": 337.3333333333333,
+          "r": 233.66666666666666,
+          "b": 320.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 3,
+    "text": "Annex-B",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 436.7830810546875,
+          "t": 821.0282255808512,
+          "r": 483.4981689453125,
+          "b": 806.7177416483561
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 1,
+    "text": "List of Students Batch 2024 - BS Computer Science (Specialisation: Artificial Intelligence) Section B",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 170.25367736816406,
+          "t": 805.6169357299805,
+          "r": 422.65993245442706,
+          "b": 775.8951619466146
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "table",
+    "level": 1,
+    "text": "| s. No.   | Roll No           | Name                           | Allocated Specialisation                        |\n|----------|-------------------|--------------------------------|-------------------------------------------------|\n| 1        | CT-24224          | MUHAMMAD TAHA FARRUKH          | Artificial Intelligence                         |\n| 2        | CT-24270          | MUHAMMAD SUBHAN QURESHI        | Artificial Intelligence                         |\n| 3        | CT-24016          | BISMA                          | Artificial Intelligence                         |\n| 4        | CT-24153          | AFEERAH SHAFQAT                | Artificial Intelligence                         |\n| 5        | CT-24305          | BISMA ASIF                     | Artificial Intelligence                         |\n| 6        | CT-24193          | SYED AZAN                      | Artificial Intelligence                         |\n| 7        | CT-24166          | AYESHA                         | Artificial Intelligence                         |\n| 8        | CT-24306          | AMAN AJWA FATIMA               | Artificial Intelligence                         |\n| 9        | CT-24226          | MUHAMMAD UZZAM SIDDIQUI        | Artificial Intelligence                         |\n| 10       | CT-24311          | IZMA WARSIA                    | Artificial Intelligence                         |\n| 11       | CT-24080          | HABIB UL REHMAN                | Artificial Intelligence                         |\n| 12       | CT-24192          | MUHAMMAD ROMAN AZIZ KHAN       | Artificial Intelligence                         |\n| 13       | CT-24010          | MANIA ASHAR HAMIDI             | Artificial Intelligence                         |\n| 14       | CT-24018          | AMNA SHAHZAD                   | Artificial Intelligence                         |\n| 15       | CT-24310          | SAFA KHURRAM                   | Artificial Intelligence                         |\n| 16       | CT-24304          | UNZILA MASOOD KHAN             | Artificial Intelligence                         |\n| 17       | CT-24054          | EMAN ANJUM FAIZ                | Artificial Intelligence                         |\n| 18       | CT-24172          | HASEEB YAQOOB                  | Artificial Intelligence                         |\n| 19       | CT-24122          | HANIA ADNAN SIDDIQUI           | Artificial Intelligence                         |\n| 20       | CT-24262          | MUHAMMAD USMAN MURTAZA         | Artificial Intelligence                         |\n| 21       | CT-24195          | MUHAMMAD MUGHEES SUBTAIN       | Artificial Intelligence                         |\n| 22       | CT-24161          | SADIA KHAN                     | Artificial Intelligence                         |\n| 23       | CT-24221          | MUHAMMAD SAAD                  | Artificial Intelligence                         |\n| 24       | CT-24013          | AMNA                           | Artificial Intelligence                         |\n| 25       | CT-24227          | USAID ULLAH QURESHI            | Artificial Intelligence                         |\n| 26       | CT-24121          | YUSMA KHAN                     | Artificial Intelligence                         |\n| 27       | CT-24110          | SHIZA NAVEED                   | Artificial Intelligence                         |\n| 28       | CT-24283          | MUNEEB UR REHMAN               | Artificial Intelligence                         |\n| 29       | CT-24223          | SAMI                           | Artificial Intelligence                         |\n| 30       | CT-24178          | KASHAN BAIG                    | Artificial Intelligence                         |\n| 31       | CT-24159          | ARSALNA SHAIKH                 | Artificial Intelligence                         |\n| 32       | CT-24184          | MUHAMMAD SAAD BAIG             | Artificial Intelligence                         |\n| 33       | CT-24052          | NOOR FATIMA                    | Artificial Intelligence                         |\n| 34       | CT-24151          | IMAN ABSHAR                    | Artificial Intelligence                         |\n| 35       | CT-24244          | UZAIR AHMED                    | Artificial Intelligence                         |\n| 36       | CT-24259          | MUHAMMAD NOUMAN FAZIL          | Artificial Intelligence                         |\n| 37       | CT-24082          | FAHAD AHMED                    | Artificial Intelligence                         |\n| 38       | CT-24093          | DANIYAL HUSSAIN                | Artificial Intelligence                         |\n| 39       | CT-24077          | HUZAIFA JAWED                  | Artificial Intelligence                         |\n| 40       | CT-24023          | MUHAMMAD IBTISAM KHAN          | Artificial Intelligence                         |\n| 41       | CT-24066          | NOOR UL AIN                    | Artificial Intelligence                         |\n| 42       | CT-24149          | ZOHAIB TARIQ                   | Artificial Intelligence                         |\n| 43       | CT-24168          | ZEHRA KAZMI                    | Artificial Intelligence                         |\n| 44       | CT-24078          | SAIM UZ ZAMAN                  | Artificial Intelligence                         |\n| 45       | CT-24182          | MUHAMMAD SHAHEER KHAN          | Artificial Intelligence                         |\n| 46       | CT-24307          | MUZAMMIL AHMED                 | Artificial Intelligence                         |\n| 47       | CT-24140          | SYED YAHYAA BIN HASHIM         | Artificial Intelligence Artificial Intelligence |\n| 48 49    | CT-24141 CT-24040 | MUHAMMAD RAFAY MUHAMMAD FURQAN | Artificial Intelligence                         |\n| 50       | CT-24102          | SHANZAY KHAN                   | Artificial Intelligence                         |",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 108.9609146118164,
+          "t": 774.0387191772461,
+          "r": 484.19427490234375,
+          "b": 109.50946044921875
+        }
+      }
+    ],
+    "media": {
+      "table": {
+        "csv": "/content/output/CamScanner 31-07-2026 10.31/tables/CamScanner 31-07-2026 10.31_table_1_p2.csv",
+        "html": "/content/output/CamScanner 31-07-2026 10.31/tables/CamScanner 31-07-2026 10.31_table_1_p2.html",
+        "rows": 49,
+        "cols": 4,
+        "page": 2
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "List of Students Batch 2024 - BS Computer Science",
+    "grounding": [
+      {
+        "page": 3,
+        "bbox": {
+          "l": 174.8330078125,
+          "t": 809.660784403483,
+          "r": 417.794921875,
+          "b": 797.0650177001953
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 3,
+    "text": "(Specialisation: Artificial Intelligence) Section C",
+    "grounding": [
+      {
+        "page": 3,
+        "bbox": {
+          "l": 181.90234375,
+          "t": 795.2126998901367,
+          "r": 412.2138671875,
+          "b": 780.7646128336588
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "table",
+    "level": 1,
+    "text": "| s. No.                  | Roll No Name                                              | Allocated Specialisation                        |\n|-------------------------|-----------------------------------------------------------|-------------------------------------------------|\n| 1                       | MUHAMMAD IBRAHIM IRSHAD                                   | Artificial Intelligence                         |\n| 2                       | CT-24233 CT-24213 EESHAH RASHID                           | Artificial Intelligence                         |\n| 3                       | CT-24074 ARAIZ ADNAN                                      | Artificial Intelligence                         |\n| 4 CT-24205              | FATIMA ZAMAN                                              | Artificial Intelligence                         |\n| 5 CT-24228              | SHAHZAD ALI SOLANGI                                       | Artificial Intelligence                         |\n| 6 CT-24111              | SANA                                                      | Artificial Intelligence                         |\n| 7                       | CT-24216 JAVERIA SOOMRO                                   | Artificial Intelligence                         |\n| 8                       | CT-24097 HAMADULLAH                                       | Artificial Intelligence                         |\n| 9 CT-24209              | EMAAN ARIF KHAN                                           | Artificial Intelligence                         |\n| 10                      | CT-24252 ALIYAN SHAIKH                                    | Artificial Intelligence                         |\n| 11 CT-24194             | FAIZAN AHMED KHAN                                         | Artificial Intelligence                         |\n| 12 CT-24215             | AROOJ ZAHRA                                               | Artificial Intelligence                         |\n| 13                      | CT-24285 SYED MUHAMMAD IBRAHIM                            | Artificial Intelligence                         |\n| 14                      | CT-24240 MUHAMMAD ARQUAM SIDDIQUI                         | Artificial Intelligence                         |\n| 15                      | CT-24298 TALAL TARIQ                                      | Artificial Intelligence                         |\n| 16                      | CT-24071 MUHAMMAD BILAL USMANI                            | Artificial Intelligence                         |\n| 17                      | CT-24164 AREEBA                                           | Artificial Intelligence                         |\n| 18                      | CT-24297 GHAZI HASHER ALI                                 | Artificial Intelligence                         |\n| 19                      | CT-24062 SANA ZEHRA                                       | Artificial Intelligence                         |\n| 20 CT-24143             | ADNAN KHALIQ                                              | Artificial Intelligence                         |\n| 21                      | CT-24038 MUHAMMAD MUSTAFA                                 | Artificial Intelligence                         |\n| 22 CT-24187             | SYED MUHAMMAD ABBAS KAZMI                                 | Artificial Intelligence                         |\n| 23                      | CT-24069 SYED FAHAM ALI                                   | Artificial Intelligence                         |\n| 24 CT-24253             | MUHAMMAD SAMI KAMRAN SIDDIQI ALEEZA MUJAHID               | Artificial Intelligence                         |\n| 25 CT-24065 26 CT-24108 | ANOOSHA HASSAN                                            | Artificial Intelligence Artificial Intelligence |\n| 27                      | CT-24207 SAMEEN ALI                                       | Artificial Intelligence                         |\n| 28 CT-24083             | ALI MUHAMMAD                                              | Artificial Intelligence                         |\n| 29                      | AMNA MUKARAM                                              | Artificial Intelligence                         |\n| 30                      | CT-24105 CT-24064 FATIMA HASAN                            | Artificial Intelligence                         |\n| 31                      | CT-24276 MUHAMMAD SHAHEER EHTESHAM CT-24294               | Artificial Intelligence                         |\n| 32                      | AHMED HUSSAIN                                             | Artificial Intelligence                         |\n| 33                      | CT-24118 ISBA MUJEEB                                      | Artificial Intelligence                         |\n| 34                      | SYED MUHAMMAD USMAN                                       | Artificial Intelligence                         |\n| 35                      | CT-24031 CT-24055 AMNA GUL                                | Artificial Intelligence                         |\n| 36                      | CT-24128 SYED USMAN HABIB                                 | Artificial Intelligence                         |\n| 37                      | CT-24150 SYED MUHAMMAD AQIB                               | Artificial Intelligence                         |\n| 38                      | CT-24072 SYED IRTAZA SHAHID ZAIDI                         | Artificial Intelligence                         |\n| 39 CT-24284             | MUHAMMAD SAAD RASHID                                      | Artificial Intelligence                         |\n| 40 CT-24275             | MOHAMMAD BILAL                                            | Artificial Intelligence                         |\n| 41                      | CT-24286 HUZAIFA UDDIN AHMED JAFFERI                      | Artificial Intelligence                         |\n| 42                      | SYED HAMZA ALI                                            | Artificial Intelligence                         |\n| 43                      | CT-24089 CT-24104 AYESHA ZAHID                            | Artificial Intelligence                         |\n| 44                      | CT-24302 MOHAMMED SAMER ABDO                              | Artificial Intelligence                         |\n| 45 CT-24103 46 CT-24036 | SYEDA AYESHA MUFAZZAL                                     | Artificial Intelligence                         |\n| 47                      | MUHAMMAD BILAL UDDIN                                      | Artificial Intelligence                         |\n| CT-24301                | JAWARYA ABDUL JABBAR                                      | Artificial Intelligence                         |\n| 48                      | CT-24251 SYED MUZZAFAR RAZA NAQVI CT-24291 MUHAMMAD HASAN | Artificial Intelligence                         |\n| 49 50                   | CT-24134 SAMIULLAH SAEED                                  | Artificial Intelligence Artificial Intelligence |",
+    "grounding": [
+      {
+        "page": 3,
+        "bbox": {
+          "l": 115.02333068847656,
+          "t": 780.162052154541,
+          "r": 476.5520935058594,
+          "b": 107.7158203125
+        }
+      }
+    ],
+    "media": {
+      "table": {
+        "csv": "/content/output/CamScanner 31-07-2026 10.31/tables/CamScanner 31-07-2026 10.31_table_2_p3.csv",
+        "html": "/content/output/CamScanner 31-07-2026 10.31/tables/CamScanner 31-07-2026 10.31_table_2_p3.html",
+        "rows": 48,
+        "cols": 3,
+        "page": 3
+      }
+    }
+  }
+]

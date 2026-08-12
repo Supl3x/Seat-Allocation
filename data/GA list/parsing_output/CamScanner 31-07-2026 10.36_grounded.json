@@ -1,0 +1,361 @@
+[
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "trar\nRe",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 102.60668182373047,
+          "t": 818.2148628234863,
+          "r": 150.95372009277344,
+          "b": 754.8508605957031
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.36/images/CamScanner 31-07-2026 10.36_image_1_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "trar\nRe"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 1,
+    "text": "NED UNIVERSITY OF ENGINEERING & TECHNOLOGY E-Mail:dracad@neduet.edu.pk/Website: www.neduet.edu.pk Phone: (92-21) 99261261-8 Ext-2221/Fax: (92-21) 99261255",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 158.0,
+          "t": 806.0,
+          "r": 494.0,
+          "b": 768.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "No. Acad/9(H)/53092 Dated:14-07-2026",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 370.6666666666667,
+          "t": 760.0,
+          "r": 471.0,
+          "b": 740.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "OFFICE E ORDER",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 253.33333333333334,
+          "t": 715.3333333333334,
+          "r": 343.3333333333333,
+          "b": 700.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The University Administration has assigned specialization in (Gaming & Animation) to the following students of BS Computer Science Programme Batch-2024 who are now progressing to the 3rd year (Fall Semester 2026).",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 89.0,
+          "t": 677.6666666666666,
+          "r": 507.3333333333333,
+          "b": 623.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The list of Computer Science (Gaming & Animation) one section is attached as Annex-F.",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 89.33333333333333,
+          "t": 610.0,
+          "r": 505.3333333333333,
+          "b": 579.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Ohussain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 392.3333333333333,
+          "t": 570.6666666666667,
+          "r": 493.0,
+          "b": 535.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "Offmrsain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 395.5190734863281,
+          "t": 567.2503051757812,
+          "r": 487.1603088378906,
+          "b": 536.3690795898438
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.36/images/CamScanner 31-07-2026 10.36_image_2_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "Offmrsain"
+      }
+    }
+  },
+  {
+    "type": "caption",
+    "level": 2,
+    "text": "REGISTRAR",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 406.0,
+          "t": 535.0,
+          "r": 468.3333333333333,
+          "b": 525.3333333333334
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 88.66666666666667,
+          "t": 502.66666666666663,
+          "r": 130.66666666666666,
+          "b": 488.66666666666663
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Controller of Examinations",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 120.33333333333334,
+          "t": 458.66666666666663,
+          "r": 266.66666666666663,
+          "b": 448.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Senior Manager (IS)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 120.0,
+          "t": 440.66666666666663,
+          "r": 231.66666666666666,
+          "b": 429.66666666666663
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy for information to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 88.0,
+          "t": 387.6666666666667,
+          "r": 203.0,
+          "b": 376.3333333333333
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "I. Dean (ECE)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 178.33333333333331,
+          "t": 363.0,
+          "r": 255.0,
+          "b": 348.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "2. CAC",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 176.66666666666669,
+          "t": 325.0,
+          "r": 241.0,
+          "b": 308.66666666666674
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 484.48187255859375,
+          "t": 32.5440673828125,
+          "r": 578.2033081054688,
+          "b": 8.620361328125
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.36/images/CamScanner 31-07-2026 10.36_image_3_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "List of Students Batch 2024 - BS Computer Science (Specialisation: Gaming & Animation) Section F",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 168.4237111409505,
+          "t": 806.2147165934244,
+          "r": 424.2113850911458,
+          "b": 774.0131072998047
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "table",
+    "level": 1,
+    "text": "|   S. No. | Roll No   | Name                         | Allocated Specialisation   |\n|----------|-----------|------------------------------|----------------------------|\n|        1 | CT-264    | QAZI MUHAMMAD AHAD           | Gaming & Animation         |\n|        2 | CT-123    | ZAINAB KHAN                  | Gaming & Animation         |\n|        3 | CT-146    | MUHAMMAD KHUZAIMA AZFAR KHAN | Gaming & Animation         |\n|        4 | CT-279    | MUHAMMAD AYAN ANWER          | Gaming & Animation         |\n|        5 | CT-004    | MARIUM NAZ                   | Gaming & Animation         |\n|        6 | CT-119    | ROMAISA FATIMA               | Gaming & Animation         |\n|        7 | CT-162    | NAEEMA                       | Gaming & Animation         |\n|        8 | CT-176    | MUHAMMAD JAN                 | Gaming & Animation         |\n|        9 | CT-086    | ABDUL BARI                   | Gaming & Animation         |\n|       10 | CT-135    | SYED MUHAMMAD NASSAR         | Gaming & Animation         |\n|       11 | CT-049    | MUHAMMAD ALI SHAIKH          | Gaming & Animation         |\n|       12 | CT-131    | MUHAMMAD KALEEMULLAH KHAN    | Gaming & Animation         |\n|       13 | CT-277    | ABDUL RAFAY                  | Gaming & Animation         |\n|       14 | CT-196    | MUHAMMAD BILAL BIN SHAMS     | Gaming & Animation         |\n|       15 | CT-079    | MUHAMMAD UZAIR               | Gaming & Animation         |\n|       16 | CT-133    | SALIK AHMED SIDDIQUI         | Gaming & Animation         |\n|       17 | CT-032    | RAYYAN AHMED                 | Gaming & Animation         |\n|       18 | CT-057    | TAZEEN JAMSHED               | Gaming & Animation         |\n|       19 | CT-175    | MUHAMMAD RAYYAAN             | Gaming & Animation         |\n|       20 | CT-293    | SYED NABEEL HUSSAIN          | Gaming & Animation         |\n|       21 | CT-299    | MUHAMMAD UZAIR               | Gaming & Animation         |\n|       22 | CT-296    | ADNAN ANWER                  | Gaming & Animation         |\n|       23 | CT-199    | MUHAMMAD EZAAN AHMED         | Gaming & Animation         |\n|       24 | CT-147    | MUHAMMAD NIZAM SIDDIQUI      | Gaming & Animation         |\n|       25 | CT-254    | MOHAMMAD ALI SANDILA         | Gaming & Animation         |\n|       26 | CT-188    | SAAD ALI SIDDIQUI            | Gaming & Animation         |\n|       27 | CT-025    | ABDULLAH                     | Gaming & Animation         |\n|       28 | CT-190    | SYED QAIM RAZA               | Gaming & Animation         |\n|       29 | CT-234    | ABDUL WAHAB                  | Gaming & Animation         |\n|       30 | CT-132    | ABDUL BARI SOOMRO            | Gaming & Animation         |\n|       31 | CT-058    | FARAIHA AMIR                 | Gaming & Animation         |\n|       32 | CT-186    | ABUZAR                       | Gaming & Animation         |\n|       33 | CT-09     | MUHAMMAD HASSAN SIDDIQUI     | Gaming & Animation         |\n|       34 | CT-246    | MUHAMMAD HASSAN KHAN         | Gaming & Animation         |\n|       35 | CT-148    | MUHAMMAD ZAHOOR UL HAQ       | Gaming & Animation         |\n|       36 | CT-087    | SAIM SAQIB MOIN              | Gaming & Animation         |\n|       37 | CT-024    | ABDULLAH MAHMOOD             | Gaming & Animation         |\n|       38 | CT-034    | MUHAMMAD MAZAN               | Gaming & Animation         |\n|       39 | CT-210    | AYESHA ABDUL JABBAR          | Gaming & Animation         |\n|       40 | CT-292    | MOIZ AHMED KHAN              | Gaming & Animation         |\n|       41 | CT-094    | MUHAMMAD FOUZAN BUTT         | Gaming & Animation         |\n|       42 | CT-229    | ZUBAIR AHMED                 | Gaming & Animation         |\n|       43 | CT-288    | MUHAMMAD AAYAAN              | Gaming & Animation         |\n|       44 | CT-050    | MUHAMMAD AMMAR MAZHAR        | Gaming & Animation         |\n|       45 | CT-200    | MUHAMMAD MUJEEB REHMAN       | Gaming & Animation         |\n|       46 | CT-198    | MUHAMMAD FAWAZ               | Gaming & Animation         |",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 107.04512023925781,
+          "t": 773.8229446411133,
+          "r": 485.3774108886719,
+          "b": 113.97259521484375
+        }
+      }
+    ],
+    "media": {
+      "table": {
+        "csv": "/content/output/CamScanner 31-07-2026 10.36/tables/CamScanner 31-07-2026 10.36_table_1_p2.csv",
+        "html": "/content/output/CamScanner 31-07-2026 10.36/tables/CamScanner 31-07-2026 10.36_table_1_p2.html",
+        "rows": 46,
+        "cols": 4,
+        "page": 2
+      }
+    }
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 484.6653747558594,
+          "t": 32.54693603515625,
+          "r": 578.2610473632812,
+          "b": 8.56170654296875
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.36/images/CamScanner 31-07-2026 10.36_image_4_p2.png",
+        "type": "image",
+        "page": 2,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  }
+]

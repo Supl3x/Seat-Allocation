@@ -1,0 +1,378 @@
+[
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "tre",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 98.77436065673828,
+          "t": 822.2094631195068,
+          "r": 147.66844177246094,
+          "b": 758.6352157592773
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.33/images/CamScanner 31-07-2026 10.33_image_1_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "tre"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 1,
+    "text": "NED UNIVERSITY OF ENGINEERING & TECHNOLOGY E-Mail:dracad@neduet.edu.pk/Website: www.neduet.edu.pk Phone: (92-21) 99261261-8 Ext-2221/Fax: (92-21) 99261255",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 156.0,
+          "t": 808.0,
+          "r": 497.0,
+          "b": 769.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "No. Acad/9(H)/53085 Dated:14-07-2026",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 372.0,
+          "t": 763.0,
+          "r": 474.3333333333333,
+          "b": 742.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "OFFICE E ORDER",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 251.0,
+          "t": 719.0,
+          "r": 343.6666666666667,
+          "b": 704.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The University Administration has assigned specialization in (Data Science) to the following students of BS Computer Science Programme BAatr Ss  Se    Sssd s o  S-26)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 83.0,
+          "t": 681.3333333333334,
+          "r": 510.6666666666667,
+          "b": 624.6666666666666
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "The list of Computer Science (Data Science) one section is attached as Annex-D.",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 83.33333333333333,
+          "t": 615.3333333333333,
+          "r": 510.3333333333333,
+          "b": 582.3333333333333
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 2,
+    "text": "Whussain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 396.0,
+          "t": 568.0,
+          "r": 502.6666666666667,
+          "b": 535.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "Jefussain",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 398.8235778808594,
+          "t": 565.9284057617188,
+          "r": 497.1937561035156,
+          "b": 535.9638366699219
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.33/images/CamScanner 31-07-2026 10.33_image_2_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "Jefussain"
+      }
+    }
+  },
+  {
+    "type": "caption",
+    "level": 2,
+    "text": "REGISTRAR",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 408.0,
+          "t": 536.6666666666666,
+          "r": 471.6666666666667,
+          "b": 525.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 83.0,
+          "t": 506.33333333333337,
+          "r": 126.0,
+          "b": 493.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "\u221a1. Chairperson, Department of Computer Science & IT",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 104.33333333333333,
+          "t": 487.66666666666663,
+          "r": 384.3333333333333,
+          "b": 460.66666666666663
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Controller of Examinations",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 115.66666666666666,
+          "t": 462.0,
+          "r": 265.33333333333337,
+          "b": 449.33333333333337
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "list_item",
+    "level": 2,
+    "text": "Senior Manager (IS)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 116.0,
+          "t": 444.33333333333337,
+          "r": 230.33333333333334,
+          "b": 431.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "Copy for information to:",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 84.0,
+          "t": 390.0,
+          "r": 200.66666666666669,
+          "b": 379.0
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "1, Dean (ECE)",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 180.0,
+          "t": 364.6666666666667,
+          "r": 254.0,
+          "b": 351.3333333333333
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "text",
+    "level": 1,
+    "text": "2. CAC",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 176.0,
+          "t": 336.0,
+          "r": 236.0,
+          "b": 319.33333333333326
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 1,
+        "bbox": {
+          "l": 484.4391784667969,
+          "t": 32.55218505859375,
+          "r": 578.2489013671875,
+          "b": 8.5634765625
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.33/images/CamScanner 31-07-2026 10.33_image_3_p1.png",
+        "type": "image",
+        "page": 1,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  },
+  {
+    "type": "section_header",
+    "level": 2,
+    "text": "List of Students Batch 2024 - BS Computer Science (Specialisation: Data Science) Section D",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 174.2142842610677,
+          "t": 807.5060482025146,
+          "r": 417.42856852213544,
+          "b": 778.2439524332682
+        }
+      }
+    ],
+    "media": {}
+  },
+  {
+    "type": "table",
+    "level": 1,
+    "text": "| S. No.   | Roll No   | Name                       | Allocated Specialisation   |\n|----------|-----------|----------------------------|----------------------------|\n| 1        | CT-24027  | MUHAMMAD TAQI SIDDIQUI     | Data Science               |\n| 2        | CT-24014  | SYEDA AMNA ALI             | Data Science               |\n| 3        | CT-24011  | ANAMTA                     | Data Science               |\n| 4        | CT-24156  | FARWA RAZA                 | Data Science               |\n| 5        | CT-24015  | MARYAM SADAQAT             | Data Science               |\n| 6        | CT-24155  | LAIBA ALI                  | Data Science               |\n| 7        | CT-24260  | MUHAMMAD BILAL             | Data Science               |\n| 8        | CT-24007  | MINZA IMRAN                | Data Science               |\n| 9        | CT-24084  | DANYAL ABBAS               | Data Science               |\n| 10       | CT-24051  | MUSFIRAH SHAKIL            | Data Science               |\n| 11       | CT-24167  | SOHAIR SHAHZAD             | Data Science               |\n| 12       | CT-24282  | MUHAMMAD HASAN ARSLAN      | Data Science               |\n| 13       | CT-24012  | AYESHA                     | Data Science               |\n| 14       | CT-24037  | UZAIR NADEEM               | Data Science               |\n| 15       | CT-24243  | MUHAMMAD HASSAN            | Data Science               |\n| 16       | CT-24063  | GOHAR ZEHRA                | Data Science               |\n| 17       | CT-24030  | HAMDAN ALI KHAN            | Data Science               |\n| 18       | CT-24059  | FALAK NAZ                  | Data Science               |\n| 19       | CT-24303  | SANIYA SIDDIQUI            | Data Science               |\n| 20       | CT-24203  | HUMNA TAHIR                | Data Science               |\n| 21       | CT-24257  | MUHAMMAD SUFIAN ADEEL      | Data Science               |\n| 22       | CT-24152  | BISMA TALIB                | Data Science               |\n| 23       | CT-24060  | RIDA FATIMA                | Data Science               |\n| 24       | CT-24005  | PALWISHA HUSSAIN           | Data Science               |\n| 25       | CT-24256  | MUHAMMAD UMER PERVEZ       | Data Science               |\n| 26       | CT-24114  | HUBBA ALI                  | Data Science               |\n| 27       | CT-24158  | IMAAN FARRUKH              | Data Science               |\n| 28       | CT-24109  | MHERAH FATIMA              | Data Science               |\n| 29       | CT-24095  | SUNIL                      | Data Science               |\n| 30       | CT-24068  | MUHAMMAD MOAZZAM FAROOQUI  | Data Science               |\n| 31       | CT-24026  | MUHAMMAD ABDULLAH          | Data Science               |\n| 32       | CT-24076  | MAAZ AHMED KHAN            | Data Science               |\n| 33       | CT-24180  | SYED MUHAMMAD BASIM ABBAS  | Data Science               |\n| 34       | CT-24271  | ABDULLAH IRSHAD            | Data Science               |\n| 35       | CT-24206  | ALIZA KANWAL               | Data Science               |\n| 36       | CT-24126  | MUHAMMAD AMMAR AWAN        | Data Science               |\n| 37       | CT-24274  | HAFIZ HAMMAD SHAHID        | Data Science               |\n| 38       | CT-24003  | AYESHA SOHAIL              | Data Science               |\n| 39       | CT-24067  | AFRAZ KHAN                 | Data Science               |\n| 40       | CT-24231  | FARJAD KHAN                | Data Science               |\n| 41       | CT-24250  | SYED MUHAMMAD ZAIN RAZA    | Data Science               |\n| 42       | CT-24129  | SYED SHAJI ABBAS NAQVI     | Data Science               |\n| 43       | CT-24273  | ARQAM AFFAF AHMED SIDDIQUE | Data Science               |\n|          | CT-24115  | MANAL HUSSAIN              | Data Science               |\n| 44       | CT-24035  | SYED WAHAAI ALI            | Data Science               |\n| 45 46    | CT-24174  | MUHAMMAD HASSAAN ANWAR     | Data Science               |\n| 47       | CT-24160  | SYEDA MALIKA BATOOL        | Data Science               |\n| 48       | CT-24021  | MASHOOD KHAN               | Data Science Data Science  |\n| 49       | CT-24181  | RAYYAN KHAN                |                            |\n| 50       | CT-24096  | FOZAN AHMAD KHAN           | Data Science               |",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 105.44695281982422,
+          "t": 778.8800964355469,
+          "r": 485.894287109375,
+          "b": 116.53790283203125
+        }
+      }
+    ],
+    "media": {
+      "table": {
+        "csv": "/content/output/CamScanner 31-07-2026 10.33/tables/CamScanner 31-07-2026 10.33_table_1_p2.csv",
+        "html": "/content/output/CamScanner 31-07-2026 10.33/tables/CamScanner 31-07-2026 10.33_table_1_p2.html",
+        "rows": 50,
+        "cols": 4,
+        "page": 2
+      }
+    }
+  },
+  {
+    "type": "picture",
+    "level": 1,
+    "text": "<b>CS</b> CamScanner",
+    "grounding": [
+      {
+        "page": 2,
+        "bbox": {
+          "l": 484.6236572265625,
+          "t": 32.58697509765625,
+          "r": 578.3555908203125,
+          "b": 8.5252685546875
+        }
+      }
+    ],
+    "media": {
+      "image": {
+        "path": "/content/output/CamScanner 31-07-2026 10.33/images/CamScanner 31-07-2026 10.33_image_4_p2.png",
+        "type": "image",
+        "page": 2,
+        "ocr_text": "<b>CS</b> CamScanner"
+      }
+    }
+  }
+]

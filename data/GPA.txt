@@ -1,0 +1,308 @@
+Roll No, Name, CGPA, Section, (1) First Choice Specialisation, (2) Second Choice Specialisation, (3) Third Choice Specialisation, (4) Fourth Choice Specialisation, (5) Fifth Choice Specialisation
+CT-001 JAVERIA IRFAN ALI 3.673 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-003 AYESHA SOHAIL 3.184 A Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-004 MARIUM NAZ 2.806 A Gaming & Animation Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence
+CT-005 PALWISHA HUSSAIN 3.480 A Data Science Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation
+CT-006 UBAIRA 2.972 A Cyber Security Computer Science - (No Specialisation) Data Science Artificial Intelligence Gaming & Animation
+CT-007 MINZA IMRAN 3.772 A Data Science Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation
+CT-008 ESHAL AAMIR ALI BASARIA 3.755 A Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-009 TAYYABA 3.855 A Computer Science - (No Specialisation) Data Science Cyber Security Artificial Intelligence Gaming & Animation
+CT-010 MANIA ASHAR HAMIDI 3.869 A Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-011 ANAMTA 3.963 A Data Science Artificial Intelligence Cyber Security Gaming & Animation Computer Science - (No Specialisation)
+CT-012 AYESHA 3.678 A Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-013 AMNA 3.781 A Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-014 SYEDA AMNA ALI 3.967 A Data Science Artificial Intelligence Cyber Security Gaming & Animation Computer Science - (No Specialisation)
+CT-015 MARYAM SADAQAT 3.798 A Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-016 BISMA 3.934 A Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-017 SYEDA LUBABA BATOOL 3.863 A Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation
+CT-018 AMNA SHAHZAD 3.864 A Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-019 AMMARAH FAROOQI 3.873 A Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation Artificial Intelligence
+CT-020 M. IBTISSAM ASLAM 3.538 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-021 MASHOOD KHAN 2.952 A Computer Science - (No Specialisation) Data Science Cyber Security Artificial Intelligence Gaming & Animation
+CT-022 HAMMAD AHMED SIDDIQUI 3.420 A Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation
+CT-023 MUHAMMAD IBTISAM KHAN 3.520 A Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-024 ABDULLAH MAHMOOD 1.833 A Cyber Security Data Science Artificial Intelligence Gaming & Animation Computer Science - (No Specialisation)
+CT-025 ABDULLAH 2.117 A Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-026 MUHAMMAD ABDULLAH 3.320 A Data Science Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation
+CT-027 MUHAMMAD TAQI SIDDIQUI 3.991 A Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-028 MUHAMMAD UMAR 3.913 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-029 SYED HUZAIFA BUKHARI 3.706 A Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-030 HAMDAN ALI KHAN 3.633 A Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-031 SYED MUHAMMAD USMAN 2.842 A Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-032 RAYYAN AHMED 2.342 A Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-033 MUHAMMAD HAMZA SIDDIQUI 3.144 A Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-034 MUHAMMAD MAZAN 1.792 A Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-035 SYED WAHAAJ ALI 3.044 A Data Science Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation
+CT-036 MUHAMMAD BILAL UDDIN 2.609 A Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-037 UZAIR NADEEM 3.661 A Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-038 MUHAMMAD MUSTAFA 3.080 A Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-039 MUHAMMAD OMER BARI 0.000 No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-040 MUHAMMAD FURQAN 3.388 A Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-041 MUHAMMAD AHMED BASIT KHAN 3.684 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-042 ZORAIZ AFRIDI 3.597 A Computer Science - (No Specialisation) Data Science Cyber Security Artificial Intelligence Gaming & Animation
+CT-043 SYED MUHAMMAD SHAYAN BIN AMIR 3.305 A Cyber Security Computer Science - (No Specialisation) Data Science Artificial Intelligence Gaming & Animation
+CT-044 SAIF UR REHMAN 3.247 A Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-045 AFLAH ARIF 3.372 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-046 SYED ABDUL RAFAY 3.589 A Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security
+CT-047 IZHAN KHAN 3.828 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-048 SYED AHMED AYAAN 3.533 A Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-049 MUHAMMAD ALI SHAIKH 2.413 A Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-050 MUHAMMAD AMMAR MAZHAR 0.971 A No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-051 MUSFIRAH SHAKIL 3.734 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-052 NOOR FATIMA 3.630 B Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-053 SYEDA AMNA JAFRI 3.905 B Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+Roll No Name CGPA Section (1) First Choice Specialisation (2) Second Choice Specialisation (3) Third Choice Specialisation (4) Fourth Choice Specialisation (5) Fifth Choice Specialisation
+CT-054 EMAN ANJUM FAIZ 3.858 B Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-055 AMNA GUL 2.835 B Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-056 KINZA 3.345 B Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-057 TAZEEN JAMSHED 2.323 B No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-058 FARAIHA AMIR 1.970 B Data Science Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-059 FALAK NAZ 3.622 B Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-060 RIDA FATIMA 3.509 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-061 GHAZIA SHAH 3.722 B Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-062 SANA ZEHRA 3.094 B Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-063 GOHAR ZEHRA 3.638 B Data Science Cyber Security Gaming & Animation Computer Science - (No Specialisation) Artificial Intelligence
+CT-064 FATIMA HASAN 2.939 B Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-065 ALEEZA MUJAHID 3.006 B Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-066 NOOR UL AIN 3.506 B Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-067 AFRAZ KHAN 3.139 B Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation Cyber Security
+CT-068 MUHAMMAD MOAZZAM FAROOQUI 3.339 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-069 SYED FAHAM ALI 3.053 B Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-070 HUSN UR REHMAN KHAN 3.370 B Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-071 MUHAMMAD BILAL USMANI 3.156 B Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-072 SYED IRTAZA SHAHID ZAIDI 2.719 B Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-073 ABDUL MOIZ HUSSAIN 0.000 B No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-074 ARAIZ ADNAN 3.352 B Artificial Intelligence Data Science Cyber Security Gaming & Animation Computer Science - (No Specialisation)
+CT-075 MUHAMMAD SUBHAN KHAN 3.492 B Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-076 MAAZ AHMED KHAN 3.302 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Computer Science - (No Specialisation) Computer Science - (No Specialisation)
+CT-077 HUZAIFA JAWED 3.536 B Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-078 SAIM UZ ZAMAN 3.477 B Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-079 MUHAMMAD UZAIR 2.345 B Gaming & Animation Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science
+CT-080 HABIB UL REHMAN 3.897 B Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation Cyber Security
+CT-081 DABEER ABBAS RAO 3.828 B Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-082 FAHAD AHMED 3.553 B Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-083 ALI MUHAMMAD 2.959 B Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-084 DANYAL ABBAS 3.742 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-085 MUHAMMAD OWAIS KAMRAN KHANIA 3.467 B Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-086 ABDUL BARI 2.464 B Artificial Intelligence Data Science Gaming & Animation Cyber Security Computer Science - (No Specialisation)
+CT-087 SAIM SAQIB MOIN 1.865 B Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-088 ABDUL RAHIM 3.056 B Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-089 SYED HAMZA ALI 2.645 B Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-090 MUHAMMAD FOUZAN ABDUL AZIZ 3.259 B Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-091 MUHAMMAD SAQIB ASGHAR 2.983 B Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation
+CT-092 ALI JAN 3.227 B Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-093 DANIYAL HUSSAIN 3.552 B Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-094 MUHAMMAD FOUZAN BUTT 1.586 B Artificial Intelligence Cyber Security Data Science Gaming & Animation Computer Science - (No Specialisation)
+CT-095 SUNIL 3.388 B Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-096 FOZAN AHMAD KHAN 2.827 B Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-097 HAMADULLAH 3.258 B Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-098 AYESHA RAUF 2.914 B Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-099 MUHAMMAD HASSAN SIDDIQUI 1.915 B Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-100 MUHAMMAD MOSID KHAN 3.261 B Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-101 MAHNOOR HAMID 2.722 C Computer Science - (No Specialisation) Data Science Cyber Security Artificial Intelligence Gaming & Animation
+CT-102 SHANZAY KHAN 3.383 C Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-103 SYEDA AYESHA MUFAZZAL 2.611 C Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-104 AYESHA ZAHID 2.628 C Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-105 AMNA MUKARAM 2.942 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+Roll No Name CGPA Section (1) First Choice Specialisation (2) Second Choice Specialisation (3) Third Choice Specialisation (4) Fourth Choice Specialisation (5) Fifth Choice Specialisation
+CT-106 AAMNA SIDDIQUI 0.000 C No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-107 TEHZEEB GHAZI 2.769 C Computer Science - (No Specialisation) Cyber Security Gaming & Animation Data Science Artificial Intelligence
+CT-108 ANOOSHA HASSAN 3.000 C Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-109 MHERAH FATIMA 3.413 C Data Science Computer Science - (No Specialisation) Gaming & Animation Artificial Intelligence Cyber Security
+CT-110 SHIZA NAVEED 3.706 C Artificial Intelligence Cyber Security Data Science Gaming & Animation Computer Science - (No Specialisation)
+CT-111 SANA 3.284 C Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-112 MASARRAT FATEMA 2.939 C Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation Data Science
+CT-113 AYESHA ASGHAR 3.609 C Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation
+CT-114 HUBBA ALI 3.438 C Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-115 MANAL HUSSAIN 3.053 C Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-116 AMNA SHAIKH 3.284 C Gaming & Animation Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science
+CT-117 SYEDA WANIA AHSAN 0.000 C No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-118 ISBA MUJEEB 2.877 C Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-119 ROMAISA FATIMA 2.788 C Data Science Gaming & Animation Artificial Intelligence Cyber Security Computer Science - (No Specialisation)
+CT-120 SYEDA JAWARIA KAZMI 3.092 C Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-121 YUSMA KHAN 3.769 C Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-122 HANIA ADNAN SIDDIQUI 3.825 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-123 ZAINAB KHAN 3.116 C Gaming & Animation Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence
+CT-124 SYED TALAL BIN RIZWAN 3.330 C Cyber Security Data Science Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-125 HARIS ZAMIR 3.372 C Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation
+CT-126 MUHAMMAD AMMAR AWAN 3.253 C Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Computer Science - (No Specialisation)
+CT-128 SYED USMAN HABIB 2.818 C Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-129 SYED SHAJI ABBAS NAQVI 3.077 C Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-130 MOIZ ALI 0.000 C No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-131 MUHAMMAD KALEEMULLAH KHAN 2.378 C No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-132 ABDUL BARI SOOMRO 1.975 C Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-133 SALIK AHMED SIDDIQUI 2.344 C Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-134 SAMIULLAH SAEED 2.519 C Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-135 SYED MUHAMMAD NASSAR 2.455 C Artificial Intelligence Cyber Security Data Science Gaming & Animation Computer Science - (No Specialisation)
+CT-136 ALI HASSAN 3.200 C Cyber Security Computer Science - (No Specialisation) Data Science Artificial Intelligence Gaming & Animation
+CT-137 MUHAMMAD HARIS 3.286 C Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-138 MUHAMMAD RAZA 3.400 C Cyber Security Computer Science - (No Specialisation) Data Science Artificial Intelligence Gaming & Animation
+CT-139 MUHAMMAD ARSAL SAJID 3.284 C Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-140 SYED YAHYAA BIN HASHIM 3.438 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-141 MUHAMMAD RAFAY 3.416 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-142 SAAD ULLAH KHAN 3.597 C Cyber Security Computer Science - (No Specialisation) Data Science Artificial Intelligence Gaming & Animation
+CT-143 ADNAN KHALIQ 3.088 C Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-144 MUHAMMAD IBRAHIM 3.694 C Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation Data Science
+CT-145 MUHAMMAD DANIYAL AKBAR 3.656 C Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation Data Science
+CT-146 MUHAMMAD KHUZAIMA AZFAR KHAN 2.884 C Gaming & Animation Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation)
+CT-147 MUHAMMAD NIZAM SIDDIQUI 2.222 C Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-148 MUHAMMAD ZAHOOR UL HAQ 1.873 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation Cyber Security
+CT-149 ZOHAIB TARIQ 3.497 C Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-150 SYED MUHAMMAD AQIB 2.738 C Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-151 IMAN ABSHAR 3.619 D Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-152 BISMA TALIB 3.513 D Data Science Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation
+CT-153 AFEERAH SHAFQAT 3.920 D Artificial Intelligence Gaming & Animation Data Science Cyber Security Computer Science - (No Specialisation)
+CT-154 SAMIN 3.375 D Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-155 LAIBA ALI 3.798 D Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-156 FARWA RAZA 3.888 D Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-157 HAMNA ALI KHAN 3.855 D Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-158 IMAAN FARRUKH 3.434 D Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+Roll No Name CGPA Section (1) First Choice Specialisation (2) Second Choice Specialisation (3) Third Choice Specialisation (4) Fourth Choice Specialisation (5) Fifth Choice Specialisation
+CT-159 ARSALNA SHAIKH 3.648 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-160 SYEDA MALIKA BATOOL 2.953 D Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-161 SADIA KHAN 3.808 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-162 NAEEMA 2.492 D Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-163 NAVERA SHAHID HUSSAIN 3.091 D Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-164 AREEBA 3.122 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation Cyber Security
+CT-165 KHADIJA 3.548 D Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-166 AYESHA 3.909 D Artificial Intelligence Data Science Gaming & Animation Cyber Security Computer Science - (No Specialisation)
+CT-167 SOHAIR SHAHZAD 3.716 D Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-168 ZEHRA KAZMI 3.492 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-169 AMNA MOHSIN 3.794 D Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-171 AHMED RAZA 3.592 D Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-172 HASEEB YAQOOB 3.850 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-174 MUHAMMAD HASSAAN ANWAR 3.033 D Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-175 MUHAMMAD RAYYAAN 2.306 D Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-176 MUHAMMAD JAN 2.482 D Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-177 FUZAIL AHMED SIDDIQUI 3.238 D Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-178 KASHAN BAIG 3.655 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-180 SYED MUHAMMAD BASIM ABBAS 3.286 D Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-181 RAYYAN KHAN 2.861 D Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-182 MUHAMMAD SHAHEER KHAN 3.453 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-183 SYED FARISS FAHEEM 3.152 D Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-184 MUHAMMAD SAAD BAIG 3.641 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-185 HASSAN SHAKIL 3.848 D Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-186 ABUZAR 1.935 D Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-187 SYED MUHAMMAD ABBAS KAZMI 3.056 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-188 SAAD ALI SIDDIQUI 2.125 D Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-189 EBRAHIM AATIR GUDARO 2.977 D Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-190 SYED QAIM RAZA 2.031 D Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-191 ALI IMRAN 2.831 D Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-192 MUHAMMAD ROMAN AZIZ KHAN 3.892 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-193 SYED AZAN 3.911 D Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-194 FAIZAN AHMED KHAN 3.216 D No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-195 MUHAMMAD MUGHEES SUBTAIN 3.813 D Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-196 MUHAMMAD BILAL BIN SHAMS 2.352 D Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-197 AYAN MIRZA 3.761 D Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-198 MUHAMMAD FAWAZ 0.800 D No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-199 MUHAMMAD EZAAN AHMED 2.239 D Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-200 MUHAMMAD MUJEEB REHMAN 0.936 D No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-201 FATIMA AZFAR 3.717 E Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-202 SYEDA MASOOMA ABIDI 3.453 E Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-203 HUMNA TAHIR 3.603 E Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-204 HIBA ABRAR 3.636 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-205 FATIMA ZAMAN 3.303 E Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-206 ALIZA KANWAL 3.255 E Data Science Artificial Intelligence Computer Science - (No Specialisation) Computer Science - (No Specialisation) Computer Science - (No Specialisation)
+CT-207 SAMEEN ALI 2.994 E Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-208 MISHAL KHAN 3.261 E Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-209 EMAAN ARIF KHAN 3.248 E Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-210 AYESHA ABDUL JABBAR 1.747 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-211 SYEDA JUWERIA KAMRAN 3.100 E Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-212 MUNEEBAH NADEEM 3.221 E Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-213 EESHAH RASHID 3.375 E Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation Cyber Security
+Roll No Name CGPA Section (1) First Choice Specialisation (2) Second Choice Specialisation (3) Third Choice Specialisation (4) Fourth Choice Specialisation (5) Fifth Choice Specialisation
+CT-215 AROOJ ZAHRA 3.208 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-216 JAVERIA SOOMRO 3.273 E Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-217 SYEDA AMNA ZAHID 2.763 E Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-218 ARSALA KHAN 3.953 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-219 SYEDA ALIZA AYAZ 4.000 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-220 MAAZ SHAHID 3.361 E Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-221 MUHAMMAD SAAD 3.792 E Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-222 MUHAMMAD BILAL RASHEED 3.597 E Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-223 SAMI 3.661 E Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-224 MUHAMMAD TAHA FARRUKH 3.944 E Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-225 NIZAM UDDIN AHMED 3.506 E Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-226 MUHAMMAD UZZAM SIDDIQUI 3.906 E Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-227 USAID ULLAH QURESHI 3.780 E Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-228 SHAHZAD ALI SOLANGI 3.291 E Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-229 ZUBAIR AHMED 1.492 E Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-230 ABDUL HADI 3.156 E Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-231 FARJAD KHAN 3.103 E Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-232 SYED MAAZ ALI 3.103 E Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation Data Science
+CT-233 MUHAMMAD IBRAHIM IRSHAD 3.375 E Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-234 ABDUL WAHAB 2.007 E Gaming & Animation Artificial Intelligence Cyber Security Data Science Computer Science - (No Specialisation)
+CT-235 MUHAMMAD SARIM UMER 3.423 E Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-236 MUHAMMAD WASAY RAFIQ 3.667 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation Data Science
+CT-237 MUHAMMAD HAMZA HAMID 3.372 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-238 MUHAMMAD MESUM ABBAS 3.344 E Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-239 MOHAMMAD USMAN MASOOD 3.252 E Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-240 MUHAMMAD ARQUAM SIDDIQUI 3.181 E Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-241 SHEERAZ MALLICK 0.000 E No response submitted No response submitted No response submitted No response submitted No response submitted
+CT-243 MUHAMMAD HASSAN 3.645 E Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-244 UZAIR AHMED 3.597 E Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science Gaming & Animation
+CT-245 MUHAMMAD AHMED KHAN 3.397 E Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-246 MUHAMMAD HASSAN KHAN 1.873 E Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Gaming & Animation Data Science
+CT-247 MUHAMMAD FERAS MALIK 3.266 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-248 RIDA RAFIQUE 3.850 E Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-249 SYED MUHAMMAD ABUZAR ZAIDI 2.916 E Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-250 SYED MUHAMMAD ZAIN RAZA 3.094 E Data Science Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Gaming & Animation
+CT-251 SYED MUZZAFAR RAZA NAQVI 2.567 F Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-252 ALIYAN SHAIKH 3.236 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-253 MUHAMMAD SAMI KAMRAN SIDDIQI 3.022 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-254 MOHAMMAD ALI SANDILA 2.203 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-255 MUHAMMAD SARAIB 3.866 F Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-256 MUHAMMAD UMER PERVEZ 3.458 F Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-257 MUHAMMAD SUFIAN ADEEL 3.519 F Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-259 MUHAMMAD NOUMAN FAZIL 3.566 F Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-260 MUHAMMAD BILAL 3.798 F Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-261 MUSTAFA AHMED SIDDIQUI 3.702 F Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-262 MUHAMMAD USMAN MURTAZA 3.822 F Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation Data Science Cyber Security
+CT-263 MUHAMMAD AFZAL 3.256 F Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-264 QAZI MUHAMMAD AHAD 3.656 F Gaming & Animation Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Artificial Intelligence
+CT-265 MUHAMMAD MAAZ ALI 3.494 F Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-266 SARIM KHAN 3.680 F Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-267 SHAHZAIM 3.789 F Computer Science - (No Specialisation) Artificial Intelligence Cyber Security Data Science Gaming & Animation
+CT-268 MUHAMMAD DANISH MERAJ 3.400 F Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+Roll No Name CGPA Section (1) First Choice Specialisation (2) Second Choice Specialisation (3) Third Choice Specialisation (4) Fourth Choice Specialisation (5) Fifth Choice Specialisation
+CT-269 WASIF AHMED SOOMRO 3.864 F Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-270 MUHAMMAD SUBHAN QURESHI 3.936 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-271 ABDULLAH IRSHAD 3.272 F Data Science Artificial Intelligence Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-273 ARQAM AFFAF AHMED SIDDIQUE 3.056 F Data Science Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-274 HAFIZ HAMMAD SHAHID 3.250 F Data Science Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation
+CT-275 MOHAMMAD BILAL 2.694 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-276 MUHAMMAD SHAHEER EHTESHAM 2.931 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-277 ABDUL RAFAY 2.366 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation Cyber Security
+CT-278 MUHAMMAD SAAD 2.975 F Cyber Security Artificial Intelligence Data Science Gaming & Animation Computer Science - (No Specialisation)
+CT-279 MUHAMMAD AYAN ANWER 2.850 F Gaming & Animation Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science
+CT-280 MUHAMMAD HUZAIFA 3.727 F Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-281 SYED MUHAMMAD HUNAIN 3.220 F Computer Science - (No Specialisation) Cyber Security Artificial Intelligence Data Science Gaming & Animation
+CT-282 MUHAMMAD HASAN ARSLAN 3.714 F Data Science Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-283 MUNEEB UR REHMAN 3.678 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-284 MUHAMMAD SAAD RASHID 2.695 F Cyber Security Artificial Intelligence Computer Science - (No Specialisation) Data Science Gaming & Animation
+CT-285 SYED MUHAMMAD IBRAHIM 3.195 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-286 HUZAIFA UDDIN AHMED JAFFERI 2.673 F Computer Science - (No Specialisation) Data Science Artificial Intelligence Cyber Security Gaming & Animation
+CT-287 MUHAMMAD MAHAD HASHMI 3.102 F Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation Data Science
+CT-288 MUHAMMAD AAYAAN 1.086 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-289 SYED IBRAHIM AZIZ 2.780 F Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
+CT-291 MUHAMMAD HASAN 2.548 F Computer Science - (No Specialisation) Data Science Cyber Security Artificial Intelligence Gaming & Animation
+CT-292 MOIZ AHMED KHAN 1.603 F Artificial Intelligence Data Science Cyber Security Gaming & Animation Computer Science - (No Specialisation)
+CT-293 SYED NABEEL HUSSAIN 2.292 F Gaming & Animation Artificial Intelligence Computer Science - (No Specialisation) Cyber Security Data Science
+CT-294 AHMED HUSSAIN 2.925 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-295 MUHAMMAD FURQAN ALI 3.169 F Cyber Security Computer Science - (No Specialisation) Artificial Intelligence Gaming & Animation Data Science
+CT-296 ADNAN ANWER 2.252 F Gaming & Animation Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security
+CT-297 GHAZI HASHER ALI 3.109 F Computer Science - (No Specialisation) Artificial Intelligence Data Science Gaming & Animation Cyber Security
+CT-298 TALAL TARIQ 3.177 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-299 MUHAMMAD UZAIR 2.281 F Computer Science - (No Specialisation) Cyber Security Data Science Artificial Intelligence Gaming & Animation
+CT-300 MUHAMMAD ZAID KHAN 2.814 F Cyber Security Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation
+CT-301 JAWARYA ABDUL JABBAR 2.606 C Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-302 MOHAMMED SAMER ABDO 2.618 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-303 SANIYA SIDDIQUI 3.620 F Data Science Artificial Intelligence Computer Science - (No Specialisation) Gaming & Animation Cyber Security
+CT-304 UNZILA MASOOD KHAN 3.860 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-305 BISMA ASIF 3.919 F Artificial Intelligence Data Science Cyber Security Computer Science - (No Specialisation) Gaming & Animation
+CT-306 AMAN AJWA FATIMA 3.906 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-307 MUZAMMIL AHMED 3.450 F Artificial Intelligence Computer Science - (No Specialisation) Data Science Cyber Security Gaming & Animation
+CT-308 RAZA ALI 3.469 F Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-309 AYESHA 3.752 F Computer Science - (No Specialisation) Artificial Intelligence Data Science Cyber Security Gaming & Animation
+CT-310 SAFA KHURRAM 3.863 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-311 IZMA WARSIA 3.903 F Artificial Intelligence Data Science Computer Science - (No Specialisation) Cyber Security Gaming & Animation
+CT-312 MUHAMMAD TALHA BIN SUHAIL 3.775 F Cyber Security Artificial Intelligence Data Science Computer Science - (No Specialisation) Gaming & Animation
