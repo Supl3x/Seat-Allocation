@@ -108,7 +108,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["🔍 Lookup", "📋 Full List", "🔀 Section
 # ==========================================
 with tab1:
     st.header("Lookup Student")
-    search_term = st.text_input("Search by Roll Number (e.g., CT-219) or Name (e.g., Aliza)", "").strip().lower()
+    search_term = st.text_input("Search by Roll Number (e.g., CT-247) or Name (e.g., Feras)", "").strip().lower()
     
     if search_term:
         mask = df['roll'].str.lower().str.contains(search_term, na=False) | df['name'].str.lower().str.contains(search_term, na=False)
