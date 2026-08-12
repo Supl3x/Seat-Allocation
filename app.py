@@ -74,11 +74,12 @@ def render_student_card(student):
             st.error("Missing From Official Lists")
             
         # Top Metrics
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
         col1.metric("CGPA", f"{student['cgpa']:.3f}")
         col2.metric("Merit Rank", f"#{student['merit_rank']}")
-        col3.metric("Old Section", student['old_section'])
-        col4.metric("New Section", student['new_section'] if student['new_section'] else "-")
+        col3.metric("Gender", student.get('gender', 'Unknown'))
+        col4.metric("Old Section", student['old_section'])
+        col5.metric("New Section", student['new_section'] if student['new_section'] else "-")
         
         st.markdown(f"**Allocated Specialisation:** {student['allocated_specialisation'] if student['allocated_specialisation'] else '-'}")
         
@@ -174,7 +175,7 @@ with tab2:
     
     # Columns to display by default vs expanded
     display_cols = [
-        'merit_rank', 'roll', 'name', 'cgpa', 'old_section', 'new_section', 
+        'merit_rank', 'roll', 'name', 'gender', 'cgpa', 'old_section', 'new_section', 
         'allocated_specialisation', 'status', 
         'choice_1', 'choice_2', 'choice_3', 'choice_4', 'choice_5'
     ]
@@ -274,7 +275,7 @@ with tab4:
     st.markdown("---")
     
     # Charts
-    chart_col1, chart_col2 = st.columns(2)
+    chart_col1, chart_col2, chart_col3 = st.columns(3)
     with chart_col1:
         st.subheader("Students per Specialisation")
         spec_counts = df[df['allocated_specialisation'] != ""]['allocated_specialisation'].value_counts().reset_index()
@@ -297,6 +298,16 @@ with tab4:
             st.plotly_chart(fig2, use_container_width=True)
         else:
             st.write("No choice data available.")
+            
+    with chart_col3:
+        st.subheader("Gender Distribution")
+        if 'gender' in df.columns:
+            gender_counts = df['gender'].value_counts().reset_index()
+            gender_counts.columns = ['Gender', 'Students']
+            fig3 = px.pie(gender_counts, names='Gender', values='Students', hole=0.4, color='Gender', color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899', 'Review': '#f59e0b'})
+            st.plotly_chart(fig3, use_container_width=True)
+        else:
+            st.write("Gender data not available.")
             
     st.markdown("---")
     
