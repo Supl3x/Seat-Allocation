@@ -332,6 +332,16 @@ with tab5:
     st.header("🔮 Admission Predictor")
     st.write("Analyze historical averages and predict your chances based on this year's merit allocation.")
     
+    st.subheader("Seat Allocation")
+    spec_counts = df[df['allocated_specialisation'] != ""]['allocated_specialisation'].value_counts().reset_index()
+    spec_counts.columns = ['Specialisation', 'Allocated Seats']
+    if not spec_counts.empty:
+        st.dataframe(spec_counts, use_container_width=True, hide_index=True)
+    else:
+        st.write("No allocation data available for seats.")
+        
+    st.markdown("---")
+    
     stats = []
     for spec in SPECIALIZATIONS:
         spec_df = df[df['allocated_specialisation'] == spec]
