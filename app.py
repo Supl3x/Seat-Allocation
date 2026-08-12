@@ -180,6 +180,8 @@ with tab2:
         'choice_1', 'choice_2', 'choice_3', 'choice_4', 'choice_5'
     ]
     
+    display_cols = [col for col in display_cols if col in filtered_df.columns]
+    
     display_df = filtered_df[display_cols].reset_index(drop=True)
     display_df.index = display_df.index + 1  # 1-based
     display_df.index.name = 'S.No'
