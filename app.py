@@ -180,10 +180,11 @@ with tab2:
     ]
     
     display_df = filtered_df[display_cols].reset_index(drop=True)
-    display_df.insert(0, 'S.No', range(1, len(display_df) + 1))
+    display_df.index = display_df.index + 1  # 1-based
+    display_df.index.name = 'S.No'
     
-    # Streamlit dataframe natively supports sorting, filtering, and resizing
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
+    # hide_index=False so S.No shows as a fixed row label, not a sortable column
+    st.dataframe(display_df, use_container_width=True, hide_index=False)
     
     csv_data = display_df.to_csv(index=False).encode('utf-8')
     st.download_button(
