@@ -140,6 +140,7 @@ with tab2:
         f_new_sec = st.multiselect("New Section", sorted([s for s in df['new_section'].unique() if s]))
         f_spec = st.multiselect("Allocated Specialisation", sorted([s for s in df['allocated_specialisation'].unique() if s]))
         f_status = st.multiselect("Status", sorted([s for s in df['status'].unique() if s]))
+        f_gender = st.multiselect("Gender", sorted([s for s in df.get('gender', pd.Series()).unique() if s]))
         
         min_cgpa, max_cgpa = float(df['cgpa'].min()), float(df['cgpa'].max())
         f_cgpa = st.slider("CGPA Range", min_value=min_cgpa, max_value=max_cgpa, value=(min_cgpa, max_cgpa))
@@ -162,6 +163,8 @@ with tab2:
         filtered_df = filtered_df[filtered_df['allocated_specialisation'].isin(f_spec)]
     if f_status:
         filtered_df = filtered_df[filtered_df['status'].isin(f_status)]
+    if f_gender and 'gender' in df.columns:
+        filtered_df = filtered_df[filtered_df['gender'].isin(f_gender)]
     
     filtered_df = filtered_df[(filtered_df['cgpa'] >= f_cgpa[0]) & (filtered_df['cgpa'] <= f_cgpa[1])]
     
@@ -310,6 +313,37 @@ with tab4:
             st.plotly_chart(fig3, use_container_width=True)
         else:
             st.write("Gender data not available.")
+            
+    st.markdown("---")
+    
+    # Gender Division
+    if 'gender' in df.columns:
+        st.subheader("Gender Division by Section")
+        st.write("Analyze the distribution of boys and girls across the newly allocated sections.")
+        
+        # Filter out empty sections
+        gen_df = df[df['new_section'] != ""].copy()
+        gen_df['new_section_display'] = gen_df['new_section']
+        
+        if not gen_df.empty:
+            gen_crosstab = pd.crosstab(gen_df['new_section_display'], gen_df['gender'], margins=True, margins_name="Total")
+            
+            gen_hm_data = pd.crosstab(gen_df['new_section_display'], gen_df['gender'])
+            fig_gen = px.imshow(
+                gen_hm_data, 
+                text_auto=True, 
+                aspect="auto", 
+                color_continuous_scale="Purples",
+                labels=dict(x="Gender", y="New Section", color="Students")
+            )
+            
+            gc1, gc2 = st.columns([1, 1.5])
+            with gc1:
+                st.dataframe(gen_crosstab, use_container_width=True)
+            with gc2:
+                st.plotly_chart(fig_gen, use_container_width=True)
+        else:
+            st.write("No section data available for gender division.")
             
     st.markdown("---")
     
