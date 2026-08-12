@@ -1,4 +1,4 @@
-roll,name,cgpa,old_section,choice_1,choice_2,choice_3,choice_4,choice_5,allocated_specialisation,new_section,status
+﻿roll,name,cgpa,old_section,choice_1,choice_2,choice_3,choice_4,choice_5,allocated_specialisation,new_section,status
 CT-219,SYEDA ALIZA AYAZ,4.0,E,Computer Science - (No Specialisation),Artificial Intelligence,Cyber Security,Data Science,Gaming & Animation,Computer Science,A,allocated
 CT-027,MUHAMMAD TAQI SIDDIQUI,3.991,A,Data Science,Computer Science - (No Specialisation),Artificial Intelligence,Cyber Security,Gaming & Animation,Data Science,D,allocated
 CT-014,SYEDA AMNA ALI,3.967,A,Data Science,Artificial Intelligence,Cyber Security,Gaming & Animation,Computer Science - (No Specialisation),Data Science,D,allocated
@@ -301,3 +301,6 @@ CT-117,SYEDA WANIA AHSAN,0.0,C,,,,,,,,no_response_not_allocated
 CT-130,MOIZ ALI,0.0,C,,,,,,,,no_response_not_allocated
 CT-241,SHEERAZ MALLICK,0.0,E,,,,,,,,no_response_not_allocated
 CT-039,MUHAMMAD OMER BARI,0.0,,,,,,,,,no_response_not_allocated
+CT-107,TEHZEEB GHAZI,2.769,C,,,,,,Cyber Security,E,allocated
+CT-141,MUHAMMAD RAFAY,3.416,C,,,,,,Artificial Intelligence,B,allocated
+CT-239,MOHAMMAD USMAN MASOOD,3.252,E,,,,,,Computer Science,A,allocated
