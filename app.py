@@ -101,7 +101,7 @@ def render_student_card(student):
 st.title("🎓 Merit Seat Checker")
 st.markdown("Check your specialization allotment, section assignment, and merit position.")
 
-tab1, tab2, tab3, tab4 = st.tabs(["🔍 Lookup", "📋 Full List", "🔀 Section Crosswalk", "📊 Overview"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🔍 Lookup", "📋 Full List", "🔀 Section Crosswalk", "📊 Overview", "🔮 Prediction"])
 
 # ==========================================
 # TAB 1: STUDENT LOOKUP
@@ -324,3 +324,62 @@ with tab4:
         st.dataframe(cm_df, use_container_width=True)
     else:
         st.write("No closing merit data available yet.")
+
+# ==========================================
+# TAB 5: PREDICTION
+# ==========================================
+with tab5:
+    st.header("🔮 Admission Predictor")
+    st.write("Analyze historical averages and predict your chances based on this year's merit allocation.")
+    
+    stats = []
+    for spec in SPECIALIZATIONS:
+        spec_df = df[df['allocated_specialisation'] == spec]
+        if not spec_df.empty:
+            avg_cgpa = spec_df['cgpa'].mean()
+            min_cgpa = spec_df['cgpa'].min()
+            
+            stats.append({
+                "Specialisation": spec,
+                "Average CGPA": avg_cgpa,
+                "Minimum CGPA (Closing Merit)": min_cgpa,
+                "Safe Target": avg_cgpa
+            })
+            
+    if stats:
+        stats_df = pd.DataFrame(stats)
+        
+        st.subheader("Historical Statistics")
+        st.dataframe(
+            stats_df.style.format({
+                "Average CGPA": "{:.3f}",
+                "Minimum CGPA (Closing Merit)": "{:.3f}",
+                "Safe Target": "{:.3f}"
+            }), 
+            use_container_width=True
+        )
+        
+        st.markdown("---")
+        st.subheader("Chances Calculator")
+        user_cgpa = st.slider("Select your expected CGPA:", min_value=1.5, max_value=4.0, value=3.5, step=0.01)
+        
+        cols = st.columns(len(SPECIALIZATIONS))
+        for i, row in stats_df.iterrows():
+            with cols[i]:
+                spec = row["Specialisation"]
+                avg_cgpa = row["Average CGPA"]
+                min_cgpa = row["Minimum CGPA (Closing Merit)"]
+                
+                with st.container(border=True):
+                    # Using shortened names to fit layout better
+                    short_spec = spec.replace('Computer Science', 'CS').replace('Artificial Intelligence', 'AI').replace('Gaming & Animation', 'Gaming')
+                    st.markdown(f"**{short_spec}**")
+                    if user_cgpa >= avg_cgpa:
+                        st.success("🟢 Likely")
+                    elif user_cgpa >= min_cgpa:
+                        st.warning("🟡 Possible")
+                    else:
+                        st.error("🔴 Unlikely")
+                    st.caption(f"Min: {min_cgpa:.3f}\n\nAvg: {avg_cgpa:.3f}")
+    else:
+        st.write("No allocation data available for predictions.")
