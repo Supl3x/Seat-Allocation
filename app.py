@@ -13,9 +13,9 @@ st.set_page_config(
 
 # --- CONSTANTS & CONFIG ---
 SPECIALIZATIONS = [
-    "Computer Science - (No Specialisation)",
-    "Data Science",
+    "Computer Science",
     "Artificial Intelligence",
+    "Data Science",
     "Cyber Security",
     "Gaming & Animation"
 ]
