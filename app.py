@@ -175,7 +175,7 @@ with tab2:
     
     # Columns to display by default vs expanded
     display_cols = [
-        'merit_rank', 'roll', 'name', 'gender', 'cgpa', 'old_section', 'new_section', 
+        'merit_rank', 'roll', 'name', 'cgpa', 'gender', 'old_section', 'new_section', 
         'allocated_specialisation', 'status', 
         'choice_1', 'choice_2', 'choice_3', 'choice_4', 'choice_5'
     ]
