@@ -511,14 +511,61 @@ with tab6:
             avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
             metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
             
-        st.write("**Overall CGPA Breakdown:**")
-        range_cols = st.columns(3)
-        count_high = len(plot_df[plot_df['cgpa'] >= 3.5])
-        count_mid = len(plot_df[(plot_df['cgpa'] >= 3.0) & (plot_df['cgpa'] < 3.5)])
-        count_low = len(plot_df[plot_df['cgpa'] < 3.0])
-        range_cols[0].metric(">= 3.5", count_high)
-        range_cols[1].metric("3.0 - 3.49", count_mid)
-        range_cols[2].metric("< 3.0", count_low)
+        st.write("**Detailed CGPA Breakdown:**")
+        st.info("💡 **Click any row in the table below to see the exact students in that CGPA range!**")
+        
+        cgpa_data = []
+        ranges = [
+            (">= 3.5", plot_df['cgpa'] >= 3.5),
+            ("3.0 - 3.49", (plot_df['cgpa'] >= 3.0) & (plot_df['cgpa'] < 3.5)),
+            ("< 3.0", plot_df['cgpa'] < 3.0)
+        ]
+        
+        for r_label, r_cond in ranges:
+            subset = plot_df[r_cond]
+            total = len(subset)
+            males = len(subset[subset['gender'] == 'Male']) if 'gender' in subset.columns else 0
+            females = len(subset[subset['gender'] == 'Female']) if 'gender' in subset.columns else 0
+            old_sec = len(subset[subset['section'] != ""]) if 'section' in subset.columns else 0
+            new_sec = len(subset[subset['new_section'] != ""]) if 'new_section' in subset.columns else 0
+            
+            cgpa_data.append({
+                "Range": r_label,
+                "Total Students": total,
+                "Male": males,
+                "Female": females,
+                "Old Section": old_sec,
+                "New Section": new_sec
+            })
+            
+        cgpa_df = pd.DataFrame(cgpa_data)
+        
+        if 'reset_cgpa' not in st.session_state:
+            st.session_state.reset_cgpa = 0
+            
+        cgpa_event = st.dataframe(
+            cgpa_df, 
+            use_container_width=True, 
+            hide_index=True,
+            on_select="rerun",
+            selection_mode="single-row",
+            key=f"cgpa_table_{st.session_state.reset_cgpa}"
+        )
+        
+        cgpa_selection = getattr(cgpa_event, "selection", cgpa_event.get("selection", {}) if isinstance(cgpa_event, dict) else {})
+        cgpa_rows = cgpa_selection.get("rows", [])
+        
+        if cgpa_rows:
+            selected_row_idx = cgpa_rows[0]
+            selected_range = cgpa_df.iloc[selected_row_idx]['Range']
+            if selected_range == ">= 3.5":
+                filtered = df[df['cgpa'] >= 3.5]
+            elif selected_range == "3.0 - 3.49":
+                filtered = df[(df['cgpa'] >= 3.0) & (df['cgpa'] < 3.5)]
+            else:
+                filtered = df[df['cgpa'] < 3.0]
+                
+            show_filtered_students_modal(filtered, f"Students in CGPA Range: {selected_range}", clear_key='reset_cgpa')
         
         selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
         points = selection.get("points", [])
@@ -535,78 +582,6 @@ with tab6:
     else:
         st.write("No data matches the selected filters.")
         
-    st.markdown("---")
-    
-    # 2. Gender Distribution and Choice Satisfaction
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.subheader("Gender Distribution")
-        if 'gender' in df.columns:
-            gender_counts = df['gender'].value_counts().reset_index()
-            gender_counts.columns = ['Gender', 'Students']
-            fig3 = px.pie(gender_counts, names='Gender', values='Students', hole=0.4, color='Gender', color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899', 'Review': '#f59e0b'})
-            st.plotly_chart(fig3, use_container_width=True)
-        else:
-            st.write("Gender data not available.")
-            
-    with col2:
-        st.subheader("Choice Satisfaction")
-        valid_choices = df[df['choice_received'] != 'Not Allocated']
-        if not valid_choices.empty:
-            choice_counts = valid_choices['choice_received'].value_counts().reset_index()
-            choice_counts.columns = ['Choice', 'Students']
-            
-            # Show pie chart
-            fig2 = px.pie(choice_counts, names='Choice', values='Students', hole=0.4)
-            st.plotly_chart(fig2, use_container_width=True)
-            
-            # Add textual explanation for Choice Satisfaction
-            st.write("### Choice Allocation Breakdown")
-            total_allocated = valid_choices.shape[0]
-            st.write(f"**Total Allocated Students:** {total_allocated}")
-            
-            # Sort choices (Choice 1, Choice 2, etc.) to show them in order
-            choice_counts = choice_counts.sort_values(by='Choice')
-            for index, row in choice_counts.iterrows():
-                choice = row['Choice']
-                count = row['Students']
-                pct = (count / total_allocated) * 100
-                st.write(f"- **{choice}:** {count} students received this choice, which is **{pct:.1f}%** of allocated students.")
-        else:
-            st.write("No choice data available.")
-            
-    st.markdown("---")
-    
-    # 3. Gender Division by Section
-    if 'gender' in df.columns:
-        st.subheader("Gender Division by Section")
-        st.write("Analyze the distribution of boys and girls across the newly allocated sections.")
-        
-        # Filter out empty sections
-        gen_df = df[df['new_section'] != ""].copy()
-        gen_df['new_section_display'] = gen_df['new_section']
-        
-        if not gen_df.empty:
-            gen_crosstab = pd.crosstab(gen_df['new_section_display'], gen_df['gender'], margins=True, margins_name="Total")
-            
-            gen_hm_data = pd.crosstab(gen_df['new_section_display'], gen_df['gender'])
-            fig_gen = px.imshow(
-                gen_hm_data, 
-                text_auto=True, 
-                aspect="auto", 
-                color_continuous_scale="Purples",
-                labels=dict(x="Gender", y="New Section", color="Students")
-            )
-            
-            gc1, gc2 = st.columns([1, 1.5])
-            with gc1:
-                st.dataframe(gen_crosstab, use_container_width=True)
-            with gc2:
-                st.plotly_chart(fig_gen, use_container_width=True)
-        else:
-            st.write("No section data available for gender division.")
-
     st.markdown("---")
     
     st.subheader("Specialisation Demand Analysis")
@@ -696,3 +671,76 @@ with tab6:
                 selected_spec = alloc_success_df.iloc[selected_row_idx]['Specialisation']
                 filtered = df[df['allocated_specialisation'] == selected_spec]
                 show_filtered_students_modal(filtered, f"Students Allocated to {selected_spec}", clear_key='reset_alloc')
+
+    
+    # 2. Gender Distribution and Choice Satisfaction
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Gender Distribution")
+        if 'gender' in df.columns:
+            gender_counts = df['gender'].value_counts().reset_index()
+            gender_counts.columns = ['Gender', 'Students']
+            fig3 = px.pie(gender_counts, names='Gender', values='Students', hole=0.4, color='Gender', color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899', 'Review': '#f59e0b'})
+            st.plotly_chart(fig3, use_container_width=True)
+        else:
+            st.write("Gender data not available.")
+            
+    with col2:
+        st.subheader("Choice Satisfaction")
+        valid_choices = df[df['choice_received'] != 'Not Allocated']
+        if not valid_choices.empty:
+            choice_counts = valid_choices['choice_received'].value_counts().reset_index()
+            choice_counts.columns = ['Choice', 'Students']
+            
+            # Show pie chart
+            fig2 = px.pie(choice_counts, names='Choice', values='Students', hole=0.4)
+            st.plotly_chart(fig2, use_container_width=True)
+            
+            # Add textual explanation for Choice Satisfaction
+            st.write("### Choice Allocation Breakdown")
+            total_allocated = valid_choices.shape[0]
+            st.write(f"**Total Allocated Students:** {total_allocated}")
+            
+            # Sort choices (Choice 1, Choice 2, etc.) to show them in order
+            choice_counts = choice_counts.sort_values(by='Choice')
+            for index, row in choice_counts.iterrows():
+                choice = row['Choice']
+                count = row['Students']
+                pct = (count / total_allocated) * 100
+                st.write(f"- **{choice}:** {count} students received this choice, which is **{pct:.1f}%** of allocated students.")
+        else:
+            st.write("No choice data available.")
+            
+    st.markdown("---")
+    
+    # 3. Gender Division by Section
+    if 'gender' in df.columns:
+        st.subheader("Gender Division by Section")
+        st.write("Analyze the distribution of boys and girls across the newly allocated sections.")
+        
+        # Filter out empty sections
+        gen_df = df[df['new_section'] != ""].copy()
+        gen_df['new_section_display'] = gen_df['new_section']
+        
+        if not gen_df.empty:
+            gen_crosstab = pd.crosstab(gen_df['new_section_display'], gen_df['gender'], margins=True, margins_name="Total")
+            
+            gen_hm_data = pd.crosstab(gen_df['new_section_display'], gen_df['gender'])
+            fig_gen = px.imshow(
+                gen_hm_data, 
+                text_auto=True, 
+                aspect="auto", 
+                color_continuous_scale="Purples",
+                labels=dict(x="Gender", y="New Section", color="Students")
+            )
+            
+            gc1, gc2 = st.columns([1, 1.5])
+            with gc1:
+                st.dataframe(gen_crosstab, use_container_width=True)
+            with gc2:
+                st.plotly_chart(fig_gen, use_container_width=True)
+        else:
+            st.write("No section data available for gender division.")
+
+    st.markdown("---")
