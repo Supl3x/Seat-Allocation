@@ -102,7 +102,7 @@ def render_student_card(student):
 def show_student_modal(student, clear_key=None):
     render_student_card(student)
     if clear_key:
-        if st.button("Close & Deselect Student", use_container_width=True):
+        if st.button("Back", use_container_width=True):
             st.session_state[clear_key] = st.session_state.get(clear_key, 0) + 1
             st.rerun()
 
@@ -116,7 +116,7 @@ def show_filtered_students_modal(filtered_df, title, clear_key=None):
         hide_index=True
     )
     if clear_key:
-        if st.button("Close & Deselect", use_container_width=True):
+        if st.button("Back", use_container_width=True):
             st.session_state[clear_key] = st.session_state.get(clear_key, 0) + 1
             st.rerun()
 
