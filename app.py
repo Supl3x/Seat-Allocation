@@ -405,53 +405,85 @@ with tab6:
     st.header("📈 Advanced Analysis")
     st.write("Deep dive into demographic metrics, choice satisfaction, and CGPA distributions.")
     
-    # 1. Gender vs CGPA Distribution
-    st.subheader("Gender vs CGPA Distribution")
-    st.write("Average CGPA of Female and Male students, with individual CGPAs marked.")
+    # 1. Advanced CGPA Distribution
+    st.subheader("Advanced CGPA Distribution")
+    st.write("Analyze the CGPA distribution with custom color coding and filters. Click any dot to see full student details.")
     
+    # Filter Controls
+    with st.expander("⚙️ Chart Controls & Filters", expanded=True):
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            color_by = st.selectbox("Color By", ["Gender", "Old Section", "New Section"], index=0)
+        with col2:
+            min_cgpa, max_cgpa = float(df['cgpa'].min()), float(df['cgpa'].max())
+            f_cgpa = st.slider("CGPA Range", min_value=min_cgpa, max_value=max_cgpa, value=(min_cgpa, max_cgpa))
+        with col3:
+            f_old_sec = st.multiselect("Filter by Old Section", sorted([s for s in df['old_section'].unique() if s]))
+            f_new_sec = st.multiselect("Filter by New Section", sorted([s for s in df['new_section'].unique() if s]))
+            
+    # Apply Filters
+    plot_df = df.copy()
     if 'gender' in df.columns:
-        gender_df = df[df['gender'].isin(['Male', 'Female'])].copy()
-        if not gender_df.empty:
-            fig_scatter = px.strip(
-                gender_df, 
-                x='gender', 
-                y='cgpa', 
-                color='gender',
-                hover_data={'name': True, 'roll': True, 'cgpa': True, 'gender': False},
-                custom_data=['roll'],
-                stripmode='overlay',
-                color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899'},
-                labels={'gender': 'Gender', 'cgpa': 'CGPA'}
-            )
+        plot_df = plot_df[plot_df['gender'].isin(['Male', 'Female'])]
+        
+    if f_old_sec:
+        plot_df = plot_df[plot_df['old_section'].isin(f_old_sec)]
+    if f_new_sec:
+        plot_df = plot_df[plot_df['new_section'].isin(f_new_sec)]
+        
+    plot_df = plot_df[(plot_df['cgpa'] >= f_cgpa[0]) & (plot_df['cgpa'] <= f_cgpa[1])]
+    
+    # Map color_by to column name
+    color_col_map = {
+        "Gender": "gender",
+        "Old Section": "old_section",
+        "New Section": "new_section"
+    }
+    color_col = color_col_map[color_by]
+    
+    # Remove empty values for the selected color column
+    plot_df = plot_df[plot_df[color_col] != ""]
+    
+    if not plot_df.empty:
+        # Distinct generic colors requested by user (Red, Blue, Green, Yellow, Light Gray instead of white for visibility, Dark Gray instead of black)
+        generic_colors = ["#ef4444", "#3b82f6", "#22c55e", "#eab308", "#d1d5db", "#374151", "#a855f7", "#ec4899", "#f97316"]
+        
+        # Sort so the legend and X axis are consistent
+        plot_df = plot_df.sort_values(by=color_col)
+        
+        fig_scatter = px.strip(
+            plot_df, 
+            x=color_col, 
+            y='cgpa', 
+            color=color_col,
+            hover_data={'name': True, 'roll': True, 'cgpa': True, color_col: False},
+            custom_data=['roll'],
+            stripmode='overlay',
+            color_discrete_sequence=generic_colors,
+            labels={color_col: color_by, 'cgpa': 'CGPA'}
+        )
+        
+        # Add average lines dynamically
+        unique_groups = plot_df[color_col].unique()
+        for idx, group in enumerate(unique_groups):
+            avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
+            line_color = generic_colors[idx % len(generic_colors)]
             
-            # Add average lines
-            avg_cgpa_male = gender_df[gender_df['gender'] == 'Male']['cgpa'].mean()
-            avg_cgpa_female = gender_df[gender_df['gender'] == 'Female']['cgpa'].mean()
-            
-            # Add horizontal line for Male Average
-            fig_scatter.add_hline(y=avg_cgpa_male, line_dash="dash", line_color="#3b82f6", 
-                                  annotation_text=f"Male Avg: {avg_cgpa_male:.3f}", 
-                                  annotation_position="bottom right")
-            
-            # Add horizontal line for Female Average
-            fig_scatter.add_hline(y=avg_cgpa_female, line_dash="dash", line_color="#ec4899", 
-                                  annotation_text=f"Female Avg: {avg_cgpa_female:.3f}", 
-                                  annotation_position="top right")
+            fig_scatter.add_hline(y=avg_val, line_dash="dash", line_color=line_color, 
+                                  annotation_text=f"{group} Avg: {avg_val:.2f}", 
+                                  annotation_position="bottom right" if idx % 2 == 0 else "top right")
                                   
-            event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
-            
-            # Extract selection robustly for different Streamlit versions
-            selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
-            points = selection.get("points", [])
-            
-            if points:
-                selected_roll = points[0]["customdata"][0]
-                student = df[df['roll'] == selected_roll].iloc[0]
-                show_student_modal(student)
-        else:
-            st.write("Not enough gender data for CGPA distribution.")
+        event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
+        
+        selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
+        points = selection.get("points", [])
+        
+        if points:
+            selected_roll = points[0]["customdata"][0]
+            student = df[df['roll'] == selected_roll].iloc[0]
+            show_student_modal(student)
     else:
-        st.write("Gender data not available.")
+        st.write("No data matches the selected filters.")
         
     st.markdown("---")
     
