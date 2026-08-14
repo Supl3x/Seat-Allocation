@@ -513,16 +513,27 @@ with tab6:
             
         st.write("**Detailed CGPA Breakdown:**")
         
-        cgpa_filter_type = st.selectbox(
-            "Filter CGPA Breakdown by Section Status:",
-            ["All Students", "Old Section Students Only", "New Section Students Only"]
+        all_old_sections = [f"Old Section {s}" for s in df['section'].unique() if str(s).strip() != ""]
+        all_new_sections = [f"New Section {s}" for s in df['new_section'].unique() if str(s).strip() != ""]
+        all_sections = sorted(list(set(all_old_sections + all_new_sections)))
+        
+        selected_cgpa_sections = st.multiselect(
+            "Filter CGPA Breakdown by Sections (leave blank for all):",
+            options=all_sections,
+            default=[]
         )
         
         cgpa_pool = plot_df.copy()
-        if cgpa_filter_type == "Old Section Students Only":
-            cgpa_pool = cgpa_pool[cgpa_pool['section'] != ""]
-        elif cgpa_filter_type == "New Section Students Only":
-            cgpa_pool = cgpa_pool[cgpa_pool['new_section'] != ""]
+        if selected_cgpa_sections:
+            old_sel = [s.replace("Old Section ", "") for s in selected_cgpa_sections if s.startswith("Old Section ")]
+            new_sel = [s.replace("New Section ", "") for s in selected_cgpa_sections if s.startswith("New Section ")]
+            
+            cond = pd.Series(False, index=cgpa_pool.index)
+            if old_sel:
+                cond = cond | cgpa_pool['section'].isin(old_sel)
+            if new_sel:
+                cond = cond | cgpa_pool['new_section'].isin(new_sel)
+            cgpa_pool = cgpa_pool[cond]
             
         st.info("💡 **Click any row in the table below to see the exact students in that CGPA range!**")
         
