@@ -107,7 +107,7 @@ def show_filtered_students_modal(filtered_df, title):
     st.subheader(title)
     st.write(f"Found {len(filtered_df)} students.")
     st.dataframe(
-        filtered_df[['roll', 'name', 'cgpa', 'gender', 'allocated_specialisation', 'status']], 
+        filtered_df[['roll', 'name', 'cgpa', 'gender', 'choice_received']], 
         use_container_width=True, 
         hide_index=True
     )
