@@ -102,6 +102,16 @@ def render_student_card(student):
 def show_student_modal(student):
     render_student_card(student)
 
+@st.dialog("Filtered Students", width="large")
+def show_filtered_students_modal(filtered_df, title):
+    st.subheader(title)
+    st.write(f"Found {len(filtered_df)} students.")
+    st.dataframe(
+        filtered_df[['roll', 'name', 'cgpa', 'gender', 'allocated_specialisation', 'status']], 
+        use_container_width=True, 
+        hide_index=True
+    )
+
 # --- UI LAYOUT ---
 st.title("🎓 Merit Seat Checker")
 st.markdown("Check your specialization allotment, section assignment, and merit position.")
@@ -464,23 +474,25 @@ with tab6:
             labels={color_col: color_by, 'cgpa': 'CGPA'}
         )
         
-        # Add average lines dynamically and display clean metrics
+        # Add average lines dynamically
         unique_groups = plot_df[color_col].unique()
-        
-        st.write(f"**Average CGPA by {color_by}:**")
-        metric_cols = st.columns(len(unique_groups))
         
         for idx, group in enumerate(unique_groups):
             avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
             line_color = generic_colors[idx % len(generic_colors)]
             
-            # Show metric cleanly above chart
-            metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
-            
             # Draw line without overlapping text
             fig_scatter.add_hline(y=avg_val, line_dash="dash", line_color=line_color)
                                   
         event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
+        
+        # Display clean metrics below chart
+        st.write(f"**Average CGPA by {color_by}:**")
+        metric_cols = st.columns(len(unique_groups))
+        
+        for idx, group in enumerate(unique_groups):
+            avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
+            metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
         
         selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
         points = selection.get("points", [])
@@ -588,13 +600,26 @@ with tab6:
             y="Students", 
             color="Preference Level", 
             barmode="group",
-            text="Students"
+            text="Students",
+            custom_data=["Specialisation", "Preference Level"]
         )
         fig_pref.update_traces(textposition='outside')
-        st.plotly_chart(fig_pref, use_container_width=True)
+        pref_event = st.plotly_chart(fig_pref, use_container_width=True, on_select="rerun", selection_mode="points")
+        
+        pref_selection = getattr(pref_event, "selection", pref_event.get("selection", {}) if isinstance(pref_event, dict) else {})
+        pref_points = pref_selection.get("points", [])
+        
+        if pref_points:
+            selected_spec = pref_points[0]["customdata"][0]
+            selected_choice = pref_points[0]["customdata"][1]
+            choice_num = selected_choice.split()[-1]
+            col_name = f"choice_{choice_num}"
+            filtered = df[df[col_name].str.startswith(selected_spec, na=False)]
+            show_filtered_students_modal(filtered, f"Students who picked {selected_spec} as {selected_choice}")
         
         st.write("### Allocation Success by Specialisation")
         st.write("For students allocated to each specialisation, which choice was it for them?")
+        st.info("💡 **Click any row in the table below to see the exact students allocated to that specialisation!**")
         
         alloc_success_data = []
         for spec in SPECIALIZATIONS:
@@ -610,4 +635,19 @@ with tab6:
                 
         if alloc_success_data:
             alloc_success_df = pd.DataFrame(alloc_success_data)
-            st.dataframe(alloc_success_df, use_container_width=True, hide_index=True)
+            alloc_event = st.dataframe(
+                alloc_success_df, 
+                use_container_width=True, 
+                hide_index=True,
+                on_select="rerun",
+                selection_mode="single-row"
+            )
+            
+            alloc_selection = getattr(alloc_event, "selection", alloc_event.get("selection", {}) if isinstance(alloc_event, dict) else {})
+            alloc_rows = alloc_selection.get("rows", [])
+            
+            if alloc_rows:
+                selected_row_idx = alloc_rows[0]
+                selected_spec = alloc_success_df.iloc[selected_row_idx]['Specialisation']
+                filtered = df[df['allocated_specialisation'] == selected_spec]
+                show_filtered_students_modal(filtered, f"Students Allocated to {selected_spec}")
