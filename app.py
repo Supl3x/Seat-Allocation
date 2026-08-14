@@ -512,30 +512,38 @@ with tab6:
             metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
             
         st.write("**Detailed CGPA Breakdown:**")
+        
+        cgpa_filter_type = st.selectbox(
+            "Filter CGPA Breakdown by Section Status:",
+            ["All Students", "Old Section Students Only", "New Section Students Only"]
+        )
+        
+        cgpa_pool = plot_df.copy()
+        if cgpa_filter_type == "Old Section Students Only":
+            cgpa_pool = cgpa_pool[cgpa_pool['section'] != ""]
+        elif cgpa_filter_type == "New Section Students Only":
+            cgpa_pool = cgpa_pool[cgpa_pool['new_section'] != ""]
+            
         st.info("💡 **Click any row in the table below to see the exact students in that CGPA range!**")
         
         cgpa_data = []
         ranges = [
-            (">= 3.5", plot_df['cgpa'] >= 3.5),
-            ("3.0 - 3.49", (plot_df['cgpa'] >= 3.0) & (plot_df['cgpa'] < 3.5)),
-            ("< 3.0", plot_df['cgpa'] < 3.0)
+            (">= 3.5", cgpa_pool['cgpa'] >= 3.5),
+            ("3.0 - 3.49", (cgpa_pool['cgpa'] >= 3.0) & (cgpa_pool['cgpa'] < 3.5)),
+            ("< 3.0", cgpa_pool['cgpa'] < 3.0)
         ]
         
         for r_label, r_cond in ranges:
-            subset = plot_df[r_cond]
+            subset = cgpa_pool[r_cond]
             total = len(subset)
             males = len(subset[subset['gender'] == 'Male']) if 'gender' in subset.columns else 0
             females = len(subset[subset['gender'] == 'Female']) if 'gender' in subset.columns else 0
-            old_sec = len(subset[subset['section'] != ""]) if 'section' in subset.columns else 0
-            new_sec = len(subset[subset['new_section'] != ""]) if 'new_section' in subset.columns else 0
             
             cgpa_data.append({
                 "Range": r_label,
                 "Total Students": total,
                 "Male": males,
-                "Female": females,
-                "Old Section": old_sec,
-                "New Section": new_sec
+                "Female": females
             })
             
         cgpa_df = pd.DataFrame(cgpa_data)
@@ -559,11 +567,11 @@ with tab6:
             selected_row_idx = cgpa_rows[0]
             selected_range = cgpa_df.iloc[selected_row_idx]['Range']
             if selected_range == ">= 3.5":
-                filtered = df[df['cgpa'] >= 3.5]
+                filtered = cgpa_pool[cgpa_pool['cgpa'] >= 3.5]
             elif selected_range == "3.0 - 3.49":
-                filtered = df[(df['cgpa'] >= 3.0) & (df['cgpa'] < 3.5)]
+                filtered = cgpa_pool[(cgpa_pool['cgpa'] >= 3.0) & (cgpa_pool['cgpa'] < 3.5)]
             else:
-                filtered = df[df['cgpa'] < 3.0]
+                filtered = cgpa_pool[cgpa_pool['cgpa'] < 3.0]
                 
             show_filtered_students_modal(filtered, f"Students in CGPA Range: {selected_range}", clear_key='reset_cgpa')
         
