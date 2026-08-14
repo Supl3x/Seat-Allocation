@@ -97,6 +97,10 @@ def render_student_card(student):
             else:
                 st.markdown(f"{i}. {choice}")
 
+@st.dialog("Student Details")
+def show_student_modal(student):
+    render_student_card(student)
+
 # --- UI LAYOUT ---
 st.title("🎓 Merit Seat Checker")
 st.markdown("Check your specialization allotment, section assignment, and merit position.")
@@ -413,7 +417,7 @@ with tab6:
                 x='gender', 
                 y='cgpa', 
                 color='gender',
-                hover_data=['name', 'roll'],
+                hover_data={'name': True, 'roll': True, 'gender': False, 'cgpa': False},
                 custom_data=['roll'],
                 stripmode='overlay',
                 color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899'},
@@ -443,8 +447,7 @@ with tab6:
             if points:
                 selected_roll = points[0]["customdata"][0]
                 student = df[df['roll'] == selected_roll].iloc[0]
-                st.markdown("### Selected Student Details")
-                render_student_card(student)
+                show_student_modal(student)
         else:
             st.write("Not enough gender data for CGPA distribution.")
     else:
@@ -521,3 +524,50 @@ with tab6:
                 st.plotly_chart(fig_gen, use_container_width=True)
         else:
             st.write("No section data available for gender division.")
+
+    st.markdown("---")
+    
+    st.subheader("Specialisation Demand Analysis")
+    st.write("Analyze the popularity of each specialisation across student preferences.")
+    
+    pref_data = []
+    for spec in SPECIALIZATIONS:
+        row = {"Specialisation": spec}
+        for i in range(1, 6):
+            count = df[df[f'choice_{i}'] == spec].shape[0]
+            row[f'Choice {i}'] = count
+        pref_data.append(row)
+        
+    if pref_data:
+        pref_df = pd.DataFrame(pref_data)
+        pref_melt = pref_df.melt(id_vars=["Specialisation"], var_name="Preference Level", value_name="Students")
+        
+        fig_pref = px.bar(
+            pref_melt, 
+            x="Specialisation", 
+            y="Students", 
+            color="Preference Level", 
+            barmode="group",
+            text="Students"
+        )
+        fig_pref.update_traces(textposition='outside')
+        st.plotly_chart(fig_pref, use_container_width=True)
+        
+        st.write("### Allocation Success by Specialisation")
+        st.write("For students allocated to each specialisation, which choice was it for them?")
+        
+        alloc_success_data = []
+        for spec in SPECIALIZATIONS:
+            spec_allocs = df[df['allocated_specialisation'] == spec]
+            total_alloc = len(spec_allocs)
+            if total_alloc > 0:
+                row = {"Specialisation": spec, "Total Allocated": total_alloc}
+                choice_counts = spec_allocs['choice_received'].value_counts()
+                for i in range(1, 6):
+                    c_name = f"Choice {i}"
+                    row[c_name] = choice_counts.get(c_name, 0)
+                alloc_success_data.append(row)
+                
+        if alloc_success_data:
+            alloc_success_df = pd.DataFrame(alloc_success_data)
+            st.dataframe(alloc_success_df, use_container_width=True, hide_index=True)
