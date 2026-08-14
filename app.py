@@ -513,26 +513,22 @@ with tab6:
             
         st.write("**Detailed CGPA Breakdown:**")
         
-        all_old_sections = [f"Old Section {s}" for s in df['old_section'].unique() if str(s).strip() != ""]
-        all_new_sections = [f"New Section {s}" for s in df['new_section'].unique() if str(s).strip() != ""]
-        all_sections = sorted(list(set(all_old_sections + all_new_sections)))
+        all_old_sections = sorted([s for s in df['old_section'].unique() if str(s).strip() != ""])
+        all_new_sections = sorted([s for s in df['new_section'].unique() if str(s).strip() != ""])
         
-        selected_cgpa_sections = st.multiselect(
-            "Filter CGPA Breakdown by Sections (leave blank for all):",
-            options=all_sections,
-            default=[]
-        )
+        fcol1, fcol2 = st.columns(2)
+        with fcol1:
+            cgpa_old_sel = st.multiselect("Filter by Old Section:", options=all_old_sections, default=[])
+        with fcol2:
+            cgpa_new_sel = st.multiselect("Filter by New Section:", options=all_new_sections, default=[])
         
         cgpa_pool = plot_df.copy()
-        if selected_cgpa_sections:
-            old_sel = [s.replace("Old Section ", "") for s in selected_cgpa_sections if s.startswith("Old Section ")]
-            new_sel = [s.replace("New Section ", "") for s in selected_cgpa_sections if s.startswith("New Section ")]
-            
+        if cgpa_old_sel or cgpa_new_sel:
             cond = pd.Series(False, index=cgpa_pool.index)
-            if old_sel:
-                cond = cond | cgpa_pool['old_section'].isin(old_sel)
-            if new_sel:
-                cond = cond | cgpa_pool['new_section'].isin(new_sel)
+            if cgpa_old_sel:
+                cond = cond | cgpa_pool['old_section'].isin(cgpa_old_sel)
+            if cgpa_new_sel:
+                cond = cond | cgpa_pool['new_section'].isin(cgpa_new_sel)
             cgpa_pool = cgpa_pool[cond]
             
         st.info("💡 **Click any row in the table below to see the exact students in that CGPA range!**")
