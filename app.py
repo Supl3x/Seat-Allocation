@@ -464,15 +464,21 @@ with tab6:
             labels={color_col: color_by, 'cgpa': 'CGPA'}
         )
         
-        # Add average lines dynamically
+        # Add average lines dynamically and display clean metrics
         unique_groups = plot_df[color_col].unique()
+        
+        st.write(f"**Average CGPA by {color_by}:**")
+        metric_cols = st.columns(len(unique_groups))
+        
         for idx, group in enumerate(unique_groups):
             avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
             line_color = generic_colors[idx % len(generic_colors)]
             
-            fig_scatter.add_hline(y=avg_val, line_dash="dash", line_color=line_color, 
-                                  annotation_text=f"{group} Avg: {avg_val:.2f}", 
-                                  annotation_position="bottom right" if idx % 2 == 0 else "top right")
+            # Show metric cleanly above chart
+            metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
+            
+            # Draw line without overlapping text
+            fig_scatter.add_hline(y=avg_val, line_dash="dash", line_color=line_color)
                                   
         event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
         
