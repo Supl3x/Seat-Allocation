@@ -107,7 +107,7 @@ def show_student_modal(student, clear_key=None):
             st.rerun()
 
 @st.dialog("Filtered Students", width="large")
-def show_filtered_students_modal(filtered_df, title):
+def show_filtered_students_modal(filtered_df, title, clear_key=None):
     st.subheader(title)
     st.write(f"Found {len(filtered_df)} students.")
     st.dataframe(
@@ -115,6 +115,10 @@ def show_filtered_students_modal(filtered_df, title):
         use_container_width=True, 
         hide_index=True
     )
+    if clear_key:
+        if st.button("Close & Deselect", use_container_width=True):
+            st.session_state[clear_key] = st.session_state.get(clear_key, 0) + 1
+            st.rerun()
 
 # --- UI LAYOUT ---
 st.title("🎓 Merit Seat Checker")
