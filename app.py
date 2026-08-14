@@ -98,9 +98,13 @@ def render_student_card(student):
             else:
                 st.markdown(f"{i}. {choice}")
 
-@st.dialog("Student Details")
-def show_student_modal(student):
+@st.dialog("Student Details", width="large")
+def show_student_modal(student, clear_key=None):
     render_student_card(student)
+    if clear_key:
+        if st.button("Close & Deselect Student", use_container_width=True):
+            st.session_state[clear_key] = st.session_state.get(clear_key, 0) + 1
+            st.rerun()
 
 @st.dialog("Filtered Students", width="large")
 def show_filtered_students_modal(filtered_df, title):
@@ -484,7 +488,16 @@ with tab6:
             # Draw line without overlapping text
             fig_scatter.add_hline(y=avg_val, line_dash="dash", line_color=line_color)
                                   
-        event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
+        if 'reset_scatter' not in st.session_state:
+            st.session_state.reset_scatter = 0
+            
+        event = st.plotly_chart(
+            fig_scatter, 
+            use_container_width=True, 
+            on_select="rerun", 
+            selection_mode="points",
+            key=f"scatter_{st.session_state.reset_scatter}"
+        )
         
         # Display clean metrics below chart
         st.write(f"**Average CGPA by {color_by}:**")
@@ -500,7 +513,7 @@ with tab6:
         if points:
             selected_roll = points[0]["customdata"][0]
             student = df[df['roll'] == selected_roll].iloc[0]
-            show_student_modal(student)
+            show_student_modal(student, clear_key='reset_scatter')
     else:
         st.write("No data matches the selected filters.")
         
