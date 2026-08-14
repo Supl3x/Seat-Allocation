@@ -499,7 +499,7 @@ with tab6:
             fig_scatter, 
             use_container_width=True, 
             on_select="rerun", 
-            selection_mode="points",
+            selection_mode=("points", "box", "lasso"),
             key=f"scatter_{st.session_state.reset_scatter}"
         )
         
@@ -510,14 +510,28 @@ with tab6:
         for idx, group in enumerate(unique_groups):
             avg_val = plot_df[plot_df[color_col] == group]['cgpa'].mean()
             metric_cols[idx].metric(label=str(group), value=f"{avg_val:.3f}")
+            
+        st.write("**Overall CGPA Breakdown:**")
+        range_cols = st.columns(3)
+        count_high = len(plot_df[plot_df['cgpa'] >= 3.5])
+        count_mid = len(plot_df[(plot_df['cgpa'] >= 3.0) & (plot_df['cgpa'] < 3.5)])
+        count_low = len(plot_df[plot_df['cgpa'] < 3.0])
+        range_cols[0].metric(">= 3.5", count_high)
+        range_cols[1].metric("3.0 - 3.49", count_mid)
+        range_cols[2].metric("< 3.0", count_low)
         
         selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
         points = selection.get("points", [])
         
         if points:
-            selected_roll = points[0]["customdata"][0]
-            student = df[df['roll'] == selected_roll].iloc[0]
-            show_student_modal(student, clear_key='reset_scatter')
+            if len(points) == 1:
+                selected_roll = points[0]["customdata"][0]
+                student = df[df['roll'] == selected_roll].iloc[0]
+                show_student_modal(student, clear_key='reset_scatter')
+            else:
+                selected_rolls = [p["customdata"][0] for p in points]
+                filtered = df[df['roll'].isin(selected_rolls)]
+                show_filtered_students_modal(filtered, f"Selected Range", clear_key='reset_scatter')
     else:
         st.write("No data matches the selected filters.")
         
