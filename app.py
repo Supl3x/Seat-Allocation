@@ -53,7 +53,8 @@ def get_choice_rank(row):
     if not alloc:
         return "Not Allocated"
     for i in range(1, 6):
-        if row[f'choice_{i}'] == alloc:
+        choice_val = str(row[f'choice_{i}'])
+        if choice_val == alloc or choice_val.startswith(alloc):
             return f"Choice {i}"
     return "Not in choices"
 
@@ -90,7 +91,7 @@ def render_student_card(student):
             if not choice:
                 continue
             
-            is_alloc = (choice == student['allocated_specialisation']) and (student['allocated_specialisation'] != "")
+            is_alloc = (student['allocated_specialisation'] != "") and str(choice).startswith(student['allocated_specialisation'])
             
             if is_alloc:
                 st.markdown(f"{i}. **:green[{choice}]** *(Allocated)*")
