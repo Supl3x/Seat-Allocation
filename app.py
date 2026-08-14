@@ -413,6 +413,8 @@ with tab6:
                 x='gender', 
                 y='cgpa', 
                 color='gender',
+                hover_data=['name', 'roll'],
+                custom_data=['roll'],
                 stripmode='overlay',
                 color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899'},
                 labels={'gender': 'Gender', 'cgpa': 'CGPA'}
@@ -432,7 +434,17 @@ with tab6:
                                   annotation_text=f"Female Avg: {avg_cgpa_female:.3f}", 
                                   annotation_position="top right")
                                   
-            st.plotly_chart(fig_scatter, use_container_width=True)
+            event = st.plotly_chart(fig_scatter, use_container_width=True, on_select="rerun", selection_mode="points")
+            
+            # Extract selection robustly for different Streamlit versions
+            selection = getattr(event, "selection", event.get("selection", {}) if isinstance(event, dict) else {})
+            points = selection.get("points", [])
+            
+            if points:
+                selected_roll = points[0]["customdata"][0]
+                student = df[df['roll'] == selected_roll].iloc[0]
+                st.markdown("### Selected Student Details")
+                render_student_card(student)
         else:
             st.write("Not enough gender data for CGPA distribution.")
     else:
