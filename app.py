@@ -513,7 +513,7 @@ with tab6:
             
         st.write("**Detailed CGPA Breakdown:**")
         
-        all_old_sections = [f"Old Section {s}" for s in df['section'].unique() if str(s).strip() != ""]
+        all_old_sections = [f"Old Section {s}" for s in df['old_section'].unique() if str(s).strip() != ""]
         all_new_sections = [f"New Section {s}" for s in df['new_section'].unique() if str(s).strip() != ""]
         all_sections = sorted(list(set(all_old_sections + all_new_sections)))
         
@@ -530,7 +530,7 @@ with tab6:
             
             cond = pd.Series(False, index=cgpa_pool.index)
             if old_sel:
-                cond = cond | cgpa_pool['section'].isin(old_sel)
+                cond = cond | cgpa_pool['old_section'].isin(old_sel)
             if new_sel:
                 cond = cond | cgpa_pool['new_section'].isin(new_sel)
             cgpa_pool = cgpa_pool[cond]
