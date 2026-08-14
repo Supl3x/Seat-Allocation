@@ -617,7 +617,17 @@ with tab6:
             custom_data=["Specialisation", "Preference Level"]
         )
         fig_pref.update_traces(textposition='outside')
-        pref_event = st.plotly_chart(fig_pref, use_container_width=True, on_select="rerun", selection_mode="points")
+        
+        if 'reset_pref' not in st.session_state:
+            st.session_state.reset_pref = 0
+            
+        pref_event = st.plotly_chart(
+            fig_pref, 
+            use_container_width=True, 
+            on_select="rerun", 
+            selection_mode="points",
+            key=f"pref_bar_{st.session_state.reset_pref}"
+        )
         
         pref_selection = getattr(pref_event, "selection", pref_event.get("selection", {}) if isinstance(pref_event, dict) else {})
         pref_points = pref_selection.get("points", [])
@@ -628,7 +638,7 @@ with tab6:
             choice_num = selected_choice.split()[-1]
             col_name = f"choice_{choice_num}"
             filtered = df[df[col_name].str.startswith(selected_spec, na=False)]
-            show_filtered_students_modal(filtered, f"Students who picked {selected_spec} as {selected_choice}")
+            show_filtered_students_modal(filtered, f"Students who picked {selected_spec} as {selected_choice}", clear_key='reset_pref')
         
         st.write("### Allocation Success by Specialisation")
         st.write("For students allocated to each specialisation, which choice was it for them?")
@@ -648,12 +658,16 @@ with tab6:
                 
         if alloc_success_data:
             alloc_success_df = pd.DataFrame(alloc_success_data)
+            if 'reset_alloc' not in st.session_state:
+                st.session_state.reset_alloc = 0
+                
             alloc_event = st.dataframe(
                 alloc_success_df, 
                 use_container_width=True, 
                 hide_index=True,
                 on_select="rerun",
-                selection_mode="single-row"
+                selection_mode="single-row",
+                key=f"alloc_table_{st.session_state.reset_alloc}"
             )
             
             alloc_selection = getattr(alloc_event, "selection", alloc_event.get("selection", {}) if isinstance(alloc_event, dict) else {})
@@ -663,4 +677,4 @@ with tab6:
                 selected_row_idx = alloc_rows[0]
                 selected_spec = alloc_success_df.iloc[selected_row_idx]['Specialisation']
                 filtered = df[df['allocated_specialisation'] == selected_spec]
-                show_filtered_students_modal(filtered, f"Students Allocated to {selected_spec}")
+                show_filtered_students_modal(filtered, f"Students Allocated to {selected_spec}", clear_key='reset_alloc')
