@@ -417,7 +417,7 @@ with tab6:
                 x='gender', 
                 y='cgpa', 
                 color='gender',
-                hover_data={'name': True, 'roll': True, 'gender': False, 'cgpa': False},
+                hover_data={'name': True, 'roll': True, 'cgpa': True, 'gender': False},
                 custom_data=['roll'],
                 stripmode='overlay',
                 color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899'},
@@ -534,7 +534,8 @@ with tab6:
     for spec in SPECIALIZATIONS:
         row = {"Specialisation": spec}
         for i in range(1, 6):
-            count = df[df[f'choice_{i}'] == spec].shape[0]
+            # Use startswith to catch "Computer Science - (No Specialisation)"
+            count = df[df[f'choice_{i}'].str.startswith(spec, na=False)].shape[0]
             row[f'Choice {i}'] = count
         pref_data.append(row)
         
