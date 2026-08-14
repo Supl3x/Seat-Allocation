@@ -1,4 +1,4 @@
-﻿roll,name,cgpa,old_section,choice_1,choice_2,choice_3,choice_4,choice_5,allocated_specialisation,new_section,status,gender
+roll,name,cgpa,old_section,choice_1,choice_2,choice_3,choice_4,choice_5,allocated_specialisation,new_section,status,gender
 CT-219,SYEDA ALIZA AYAZ,4.0,E,Computer Science - (No Specialisation),Artificial Intelligence,Cyber Security,Data Science,Gaming & Animation,Computer Science,A,allocated,Female
 CT-027,MUHAMMAD TAQI SIDDIQUI,3.991,A,Data Science,Computer Science - (No Specialisation),Artificial Intelligence,Cyber Security,Gaming & Animation,Data Science,D,allocated,Male
 CT-014,SYEDA AMNA ALI,3.967,A,Data Science,Artificial Intelligence,Cyber Security,Gaming & Animation,Computer Science - (No Specialisation),Data Science,D,allocated,Female
@@ -75,7 +75,7 @@ CT-223,SAMI,3.661,E,Artificial Intelligence,Data Science,Computer Science - (No 
 CT-145,MUHAMMAD DANIYAL AKBAR,3.656,C,Cyber Security,Computer Science - (No Specialisation),Artificial Intelligence,Gaming & Animation,Data Science,Cyber Security,E,allocated,Male
 CT-264,QAZI MUHAMMAD AHAD,3.656,F,Gaming & Animation,Artificial Intelligence,Cyber Security,Computer Science - (No Specialisation),Artificial Intelligence,Gaming & Animation,F,allocated,Male
 CT-178,KASHAN BAIG,3.655,D,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,B,allocated,Male
-CT-159,ARSALNA SHAIKH,3.648,D,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,B,allocated,Male
+CT-159,ARSALNA SHAIKH,3.648,D,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,B,allocated,Female
 CT-243,MUHAMMAD HASSAN,3.645,E,Data Science,Artificial Intelligence,Cyber Security,Computer Science - (No Specialisation),Gaming & Animation,Data Science,D,allocated,Male
 CT-184,MUHAMMAD SAAD BAIG,3.641,D,Artificial Intelligence,Data Science,Computer Science - (No Specialisation),Cyber Security,Gaming & Animation,Artificial Intelligence,B,allocated,Male
 CT-063,GOHAR ZEHRA,3.638,B,Data Science,Cyber Security,Gaming & Animation,Computer Science - (No Specialisation),Artificial Intelligence,Data Science,D,allocated,Female
@@ -296,7 +296,7 @@ CT-050,MUHAMMAD AMMAR MAZHAR,0.971,A,No response submitted,No response submitted
 CT-200,MUHAMMAD MUJEEB REHMAN,0.936,D,No response submitted,No response submitted,No response submitted,No response submitted,No response submitted,Gaming & Animation,F,allocated,Male
 CT-198,MUHAMMAD FAWAZ,0.8,D,No response submitted,No response submitted,No response submitted,No response submitted,No response submitted,Gaming & Animation,F,allocated,Male
 CT-073,ABDUL MOIZ HUSSAIN,0.0,B,,,,,,,,no_response_not_allocated,Male
-CT-106,AAMNA SIDDIQUI,0.0,C,,,,,,,,no_response_not_allocated,Male
+CT-106,AAMNA SIDDIQUI,0.0,C,,,,,,,,no_response_not_allocated,Female
 CT-117,SYEDA WANIA AHSAN,0.0,C,,,,,,,,no_response_not_allocated,Female
 CT-130,MOIZ ALI,0.0,C,,,,,,,,no_response_not_allocated,Male
 CT-241,SHEERAZ MALLICK,0.0,E,,,,,,,,no_response_not_allocated,Male

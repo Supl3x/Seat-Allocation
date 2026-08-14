@@ -1,5 +1,7 @@
 # 🎓 Merit Seat Checker
 
+**Live App:** [https://seat-allocation.streamlit.app/](https://seat-allocation.streamlit.app/)
+
 A comprehensive, interactive Streamlit web application designed to help students check their specialization allotments, track section assignments, and predict admission chances based on merit positions.
 
 ## 🚀 Features

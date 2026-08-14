@@ -101,7 +101,7 @@ def render_student_card(student):
 st.title("🎓 Merit Seat Checker")
 st.markdown("Check your specialization allotment, section assignment, and merit position.")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🔍 Lookup", "📋 Full List", "🔀 Section Crosswalk", "📊 Overview", "🔮 Prediction"])
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🔍 Lookup", "📋 Full List", "🔀 Section Crosswalk", "📊 Overview", "🔮 Prediction", "📈 Advanced Analysis"])
 
 # ==========================================
 # TAB 1: STUDENT LOOKUP
@@ -284,70 +284,15 @@ with tab4:
     st.markdown("---")
     
     # Charts
-    chart_col1, chart_col2, chart_col3 = st.columns(3)
-    with chart_col1:
-        st.subheader("Students per Specialisation")
-        spec_counts = df[df['allocated_specialisation'] != ""]['allocated_specialisation'].value_counts().reset_index()
-        spec_counts.columns = ['Specialisation', 'Students']
-        
-        if not spec_counts.empty:
-            fig1 = px.bar(spec_counts, x='Students', y='Specialisation', orientation='h', color='Specialisation')
-            st.plotly_chart(fig1, use_container_width=True)
-        else:
-            st.write("No allocation data.")
-            
-    with chart_col2:
-        st.subheader("Choice Satisfaction")
-        valid_choices = df[df['choice_received'] != 'Not Allocated']
-        if not valid_choices.empty:
-            choice_counts = valid_choices['choice_received'].value_counts().reset_index()
-            choice_counts.columns = ['Choice', 'Students']
-            
-            fig2 = px.pie(choice_counts, names='Choice', values='Students', hole=0.4)
-            st.plotly_chart(fig2, use_container_width=True)
-        else:
-            st.write("No choice data available.")
-            
-    with chart_col3:
-        st.subheader("Gender Distribution")
-        if 'gender' in df.columns:
-            gender_counts = df['gender'].value_counts().reset_index()
-            gender_counts.columns = ['Gender', 'Students']
-            fig3 = px.pie(gender_counts, names='Gender', values='Students', hole=0.4, color='Gender', color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899', 'Review': '#f59e0b'})
-            st.plotly_chart(fig3, use_container_width=True)
-        else:
-            st.write("Gender data not available.")
-            
-    st.markdown("---")
+    st.subheader("Students per Specialisation")
+    spec_counts = df[df['allocated_specialisation'] != ""]['allocated_specialisation'].value_counts().reset_index()
+    spec_counts.columns = ['Specialisation', 'Students']
     
-    # Gender Division
-    if 'gender' in df.columns:
-        st.subheader("Gender Division by Section")
-        st.write("Analyze the distribution of boys and girls across the newly allocated sections.")
-        
-        # Filter out empty sections
-        gen_df = df[df['new_section'] != ""].copy()
-        gen_df['new_section_display'] = gen_df['new_section']
-        
-        if not gen_df.empty:
-            gen_crosstab = pd.crosstab(gen_df['new_section_display'], gen_df['gender'], margins=True, margins_name="Total")
-            
-            gen_hm_data = pd.crosstab(gen_df['new_section_display'], gen_df['gender'])
-            fig_gen = px.imshow(
-                gen_hm_data, 
-                text_auto=True, 
-                aspect="auto", 
-                color_continuous_scale="Purples",
-                labels=dict(x="Gender", y="New Section", color="Students")
-            )
-            
-            gc1, gc2 = st.columns([1, 1.5])
-            with gc1:
-                st.dataframe(gen_crosstab, use_container_width=True)
-            with gc2:
-                st.plotly_chart(fig_gen, use_container_width=True)
-        else:
-            st.write("No section data available for gender division.")
+    if not spec_counts.empty:
+        fig1 = px.bar(spec_counts, x='Students', y='Specialisation', orientation='h', color='Specialisation')
+        st.plotly_chart(fig1, use_container_width=True)
+    else:
+        st.write("No allocation data.")
             
     st.markdown("---")
     
@@ -448,3 +393,119 @@ with tab5:
                     st.caption(f"Min: {min_cgpa:.3f}\n\nAvg: {avg_cgpa:.3f}\n\nMax: {max_cgpa:.3f}")
     else:
         st.write("No allocation data available for predictions.")
+
+# ==========================================
+# TAB 6: ADVANCED ANALYSIS
+# ==========================================
+with tab6:
+    st.header("📈 Advanced Analysis")
+    st.write("Deep dive into demographic metrics, choice satisfaction, and CGPA distributions.")
+    
+    # 1. Gender vs CGPA Distribution
+    st.subheader("Gender vs CGPA Distribution")
+    st.write("Average CGPA of Female and Male students, with individual CGPAs marked.")
+    
+    if 'gender' in df.columns:
+        gender_df = df[df['gender'].isin(['Male', 'Female'])].copy()
+        if not gender_df.empty:
+            fig_scatter = px.strip(
+                gender_df, 
+                x='gender', 
+                y='cgpa', 
+                color='gender',
+                stripmode='overlay',
+                color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899'},
+                labels={'gender': 'Gender', 'cgpa': 'CGPA'}
+            )
+            
+            # Add average lines
+            avg_cgpa_male = gender_df[gender_df['gender'] == 'Male']['cgpa'].mean()
+            avg_cgpa_female = gender_df[gender_df['gender'] == 'Female']['cgpa'].mean()
+            
+            # Add horizontal line for Male Average
+            fig_scatter.add_hline(y=avg_cgpa_male, line_dash="dash", line_color="#3b82f6", 
+                                  annotation_text=f"Male Avg: {avg_cgpa_male:.3f}", 
+                                  annotation_position="bottom right")
+            
+            # Add horizontal line for Female Average
+            fig_scatter.add_hline(y=avg_cgpa_female, line_dash="dash", line_color="#ec4899", 
+                                  annotation_text=f"Female Avg: {avg_cgpa_female:.3f}", 
+                                  annotation_position="top right")
+                                  
+            st.plotly_chart(fig_scatter, use_container_width=True)
+        else:
+            st.write("Not enough gender data for CGPA distribution.")
+    else:
+        st.write("Gender data not available.")
+        
+    st.markdown("---")
+    
+    # 2. Gender Distribution and Choice Satisfaction
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Gender Distribution")
+        if 'gender' in df.columns:
+            gender_counts = df['gender'].value_counts().reset_index()
+            gender_counts.columns = ['Gender', 'Students']
+            fig3 = px.pie(gender_counts, names='Gender', values='Students', hole=0.4, color='Gender', color_discrete_map={'Male': '#3b82f6', 'Female': '#ec4899', 'Review': '#f59e0b'})
+            st.plotly_chart(fig3, use_container_width=True)
+        else:
+            st.write("Gender data not available.")
+            
+    with col2:
+        st.subheader("Choice Satisfaction")
+        valid_choices = df[df['choice_received'] != 'Not Allocated']
+        if not valid_choices.empty:
+            choice_counts = valid_choices['choice_received'].value_counts().reset_index()
+            choice_counts.columns = ['Choice', 'Students']
+            
+            # Show pie chart
+            fig2 = px.pie(choice_counts, names='Choice', values='Students', hole=0.4)
+            st.plotly_chart(fig2, use_container_width=True)
+            
+            # Add textual explanation for Choice Satisfaction
+            st.write("### Choice Allocation Breakdown")
+            total_allocated = valid_choices.shape[0]
+            st.write(f"**Total Allocated Students:** {total_allocated}")
+            
+            # Sort choices (Choice 1, Choice 2, etc.) to show them in order
+            choice_counts = choice_counts.sort_values(by='Choice')
+            for index, row in choice_counts.iterrows():
+                choice = row['Choice']
+                count = row['Students']
+                pct = (count / total_allocated) * 100
+                st.write(f"- **{choice}:** {count} students received this choice, which is **{pct:.1f}%** of allocated students.")
+        else:
+            st.write("No choice data available.")
+            
+    st.markdown("---")
+    
+    # 3. Gender Division by Section
+    if 'gender' in df.columns:
+        st.subheader("Gender Division by Section")
+        st.write("Analyze the distribution of boys and girls across the newly allocated sections.")
+        
+        # Filter out empty sections
+        gen_df = df[df['new_section'] != ""].copy()
+        gen_df['new_section_display'] = gen_df['new_section']
+        
+        if not gen_df.empty:
+            gen_crosstab = pd.crosstab(gen_df['new_section_display'], gen_df['gender'], margins=True, margins_name="Total")
+            
+            gen_hm_data = pd.crosstab(gen_df['new_section_display'], gen_df['gender'])
+            fig_gen = px.imshow(
+                gen_hm_data, 
+                text_auto=True, 
+                aspect="auto", 
+                color_continuous_scale="Purples",
+                labels=dict(x="Gender", y="New Section", color="Students")
+            )
+            
+            gc1, gc2 = st.columns([1, 1.5])
+            with gc1:
+                st.dataframe(gen_crosstab, use_container_width=True)
+            with gc2:
+                st.plotly_chart(fig_gen, use_container_width=True)
+        else:
+            st.write("No section data available for gender division.")
